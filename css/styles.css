@@ -164,11 +164,11 @@ html, body {
     margin: 0;
     padding: 0;
     border: 1px solid red;
-    height: 100vh; }
+    height: 100%; }
   .img_block img {
     width: 100%;
     height: inherit;
-    border: 1px solid blue; }
+    border: 1px solid green; }
   .lig_block {
     width: 30%; }
   .darkg_block {
