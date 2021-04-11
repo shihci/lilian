@@ -224,8 +224,9 @@ html, body {
 .aboutpict {
   right: 10%;
   top: 15%; }
-  .aboutpict img {
-    width: 400px; }
+
+.aboutpict img {
+  width: 400px; }
 
 .aboutme_block3 {
   position: relative; }
