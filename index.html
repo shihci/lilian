@@ -26,18 +26,20 @@
                 </div>
             </div>
         </div>
-        <div id="thumbs" class="d-none">
-            <img src="images/IMG_0914_2.jpg" alt="" class="small">
-            <img src="images/IMG_0928.JPG" alt="" class="small">
-            <img src="images/S__3923975.jpg" alt="" class="small">
-        </div>
-        <div class="img_block"><img id="big" src="images/S__3923975.jpg" alt="">
+        <div class="img_block ">
+            <div class="cycle-slideshow">
+                <img src="images/S__3923975_3.jpg" alt="">
+                <img src="images/IMG_0914_2.jpg" alt="">
+                <img src="images/IMG_0928.JPG" alt="" 
+            ></div>
+
         </div> 
         <div class="darkg_block">
             <div class="right_text-2 text-center d-none d-md-block">
                 <div class="pict_name-2">lilian</div>
-                <div class="pro_name-2">Profolio作品集</div>
+                <div class="pro_name-2">Profolio作品集</div>    
             </div>
+            <div class="right_text-3">PROFOLIO</div>
             <div class="left_text-3 d-md-none">
                 <div class="dib-2 name_text-2">收錄 2018 —— 至今</div>
                 <div class="dib-2 name-2">Qian-Hui,Chen</div>
@@ -48,7 +50,12 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.js"></script>
 <script>
-
+    $(document).ready(function(){
+        $(".cycle-slideshow").cycle({
+            fx:"fade"
+        });
+    });
 </script>
 </html>
