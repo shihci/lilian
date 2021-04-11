@@ -163,7 +163,8 @@ html, body {
             transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
-    border: 1px solid red; }
+    border: 1px solid red;
+    height: 100vh; }
   .img_block img {
     width: 100%;
     height: inherit;
