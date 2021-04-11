@@ -163,7 +163,16 @@ html, body {
     padding: 0;
     height: 100%; }
   .img_block img {
-    width: 100%; }
+    min-width: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
   .lig_block {
     width: 30%; }
   .darkg_block {
