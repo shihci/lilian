@@ -138,13 +138,11 @@ html, body {
     left: 38%;
     z-index: 5; }
   .img_block img {
-    width: 350px;
-    height: 600px; } }
+    width: 350px; } }
 
 @media screen and (min-width: 975px) {
   .img_block img {
-    width: 500px;
-    height: 800px; } }
+    width: 500px; } }
 
 @media screen and (min-width: 1025px) {
   .img_block {
@@ -163,12 +161,9 @@ html, body {
             transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
-    border: 1px solid red;
     height: 100%; }
   .img_block img {
-    width: 100%;
-    height: inherit;
-    border: 1px solid green; }
+    width: 100%; }
   .lig_block {
     width: 30%; }
   .darkg_block {
