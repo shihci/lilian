@@ -162,10 +162,12 @@ html, body {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    border: 1px solid red; }
   .img_block img {
     width: 100%;
-    height: inherit; }
+    height: inherit;
+    border: 1px solid blue; }
   .lig_block {
     width: 30%; }
   .darkg_block {
