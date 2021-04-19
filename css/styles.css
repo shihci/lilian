@@ -20,7 +20,7 @@ html, body {
       font-weight: 600; }
       .home_ul li a:hover {
         font-weight: 600;
-        color: #4D2A16; }
+        color: #6A340A; }
 
 .body_block {
   font-size: 0px; }
@@ -186,7 +186,7 @@ html, body {
   border-bottom: 1px solid #007A79; }
 
 .page_bg {
-  background-color: #F1F4F2; }
+  background-color: #fff; }
 
 .nav-link {
   color: #007A79 !important;
@@ -330,4 +330,65 @@ html, body {
 @media screen and (min-width: 1199px) {
   .pict {
     height: 200px; } }
+
+.header {
+  position: relative; }
+
+.header_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 16px;
+  padding-left: 16px; }
+
+.header_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #007A79; }
+
+.header_subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #976F4F; }
+
+.pro_subtitle h5 {
+  color: #6A340A; }
+
+.pro_bg1 {
+  padding-top: 3rem;
+  background-color: #007A79;
+  border-radius: 2.5rem; }
+
+.btn_green {
+  background-color: #007A79;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.3rem 1.3rem; }
+  .btn_green:hover {
+    color: #fff;
+    background-color: #00adac; }
+
+.square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333; }
+
+.ypro_color1 {
+  background-color: #1C1C80; }
+
+.ypro_color2 {
+  background-color: #4EB2E6; }
+
+.ypro_color3 {
+  background-color: #FEB336; }
+
+.ypro_color4 {
+  background-color: #fff; }
+
+.ypro_color5 {
+  background-color: #F2F2F2; }
+
+.ypro_t1 {
+  color: #fff; }
 /*# sourceMappingURL=styles.css.map */

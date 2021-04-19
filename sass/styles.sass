@@ -2,7 +2,7 @@ $dark_green: #002A29
 $green: #007A79
 $text_green: #006562
 $light_green: #F1F4F2
-$dark_coffee: #4D2A16
+$dark_coffee: #6A340A
 $coffee: #976F4F
 
 *   
@@ -33,9 +33,7 @@ html,body
 
 
 //02
-    *
-    border: 1px solid #000
-    border-size: 
+
 .body_block
     font-size: 0px
 .lig_block, .img_block, .darkg_block
@@ -182,7 +180,7 @@ html,body
 .navbar_bdb
     border-bottom: 1px solid $green
 .page_bg
-    background-color: $light_green
+    background-color: #fff
 .nav-link
     color: $green !important
     font-weight: 600
@@ -302,6 +300,52 @@ html,body
 @media screen and ( min-width: 1199px  )
     .pict
         height: 200px
-    
 
-
+//profolio
+.header
+    position: relative
+.header_text
+    position: absolute
+    top: 0
+    left: 0
+    padding-top: 16px
+    padding-left: 16px
+.header_title
+    font-size: 32px
+    font-weight: 700
+    color: $green
+.header_subtitle
+    font-size: 18px
+    font-weight: 600
+    color: $coffee
+.pro_subtitle h5
+    color: $dark_coffee
+.pro_bg1
+    padding-top: 3rem
+    background-color: $green
+    border-radius: 2.5rem
+.btn_green
+    background-color: $green
+    color: #fff
+    border-radius: 2rem
+    padding: 0.3rem 1.3rem
+    &:hover
+        color: #fff
+        background-color: lighten($green,10%)
+.square
+    display: inline-block
+    width: 20px
+    height: 20px
+    border: 1px solid #333
+.ypro_color1
+    background-color: #1C1C80
+.ypro_color2
+    background-color: #4EB2E6
+.ypro_color3
+    background-color: #FEB336
+.ypro_color4
+    background-color: #fff
+.ypro_color5
+    background-color: #F2F2F2
+.ypro_t1
+    color: #fff
