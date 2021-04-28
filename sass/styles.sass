@@ -1,0 +1,364 @@
+$dark_green: #002A29
+$lightgreen: #E4EDED
+$green: #007A79
+$text_green: #006562
+$light_green: #F1F4F2
+$dark_coffee: #6A340A
+$coffee: #976F4F
+
+*   
+    font-family: "Noto Serif TC", "微軟正黑體", "Arial", serif
+    //border: 1px solid #000
+
+html,body
+    padding: 0
+    margin: 0
+
+
+.home_ul
+    list-style: none
+    padding: 0
+    font-size: 16px
+    font-weight: 500
+    & li
+        padding-top: 4px
+        padding-bottom: 4px
+        
+        & a
+            text-decoration: none
+            color: $coffee
+            font-weight: 600
+            &:hover
+                font-weight: 600
+                color: $dark_coffee
+
+
+//02
+
+.body_block
+    font-size: 0px
+.lig_block, .img_block, .darkg_block
+    position: relative
+    height: 100vh
+    display: inline-block
+    vertical-align: top
+    font-size: inherit
+    
+.lig_block
+    width: calc(100% / 3 * 2)
+    background-color: $light_green
+.darkg_block
+    width: calc(100% / 3)
+    background-color: $dark_green
+.img_block
+    position: absolute
+    top: 20%
+    left: 0%
+    z-index: 5
+.img_block img
+    width: 300px
+.dib-2
+    vertical-align: top
+    display: inline-block
+    
+.left_text-2
+    position: absolute
+    white-space: nowrap
+    top: 30%
+    left: 40%
+    transform: translate(-50%,-50%)
+.left_text-2 div
+    padding-left: 4px
+    padding-right: 4px
+.left_text-3
+    position: absolute
+    white-space: nowrap
+    top: 30%
+    right: 10%
+    transform: translateY(-50%)
+    
+.left_text-3 div
+    padding-left: 4px
+    padding-right: 4px
+    color: #fff
+.name_text-2, .name-2
+    writing-mode: vertical-lr
+    color: $text_green
+.name_text-2
+    font-size: 14px
+.name-2
+    font-family: 'Volkhov', serif
+    font-size: 42px
+.right_text-2
+    position: absolute
+    right: 0%
+    top: 0%
+    margin: 16px 32px
+    text-align: center
+.right_text-3
+    position: absolute
+    top: 60%
+    left: 0px
+    transform: translateY(-50%)
+    height: 100px
+    color: white
+    opacity: 40%
+    padding: 0
+    margin: 0
+    line-height: 35px
+    writing-mode: vertical-lr
+    font-family: 'Volkhov', serif
+    font-size: 52px
+
+    z-index: 10
+.pict_name-2, .pro_name-2
+    color: #fff
+.pict_name-2
+    font-family: 'Pattaya', sans-serif
+    font-size: 32px
+    
+.pro_name-2
+    font-size: 16px
+    writing-mode: vertical-lr
+    margin: auto
+@media screen and ( min-width: 768px )
+    .img_block
+        position: absolute
+        top: 20%
+        left: 38%
+        z-index: 5
+    .img_block img
+        width: 350px
+    
+@media screen and ( min-width: 975px  )
+    .img_block img
+        width: 500px
+    
+@media screen and ( min-width: 1025px )
+    .img_block
+        position: relative
+        top: 0
+        left: 0 
+        width: 40%
+        overflow: hidden
+        padding: 0
+        margin: 0
+    .img_block div
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        margin: 0
+        padding: 0
+        height: 100%
+    
+    .img_block img
+        //position: relative
+        width: 100%
+        //display: none
+        //background-image: url("../images/IMG_0914_2.jpg")
+        //background-size: cover
+        // background-position: center center
+        //overflow: hidden
+    .lig_block
+        width: 30%
+    .darkg_block
+        width: 30%
+    .left_text-2
+        position: absolute
+        white-space: nowrap
+        top: 40%
+        left: 50%
+        transform: translate(-50%,-50%)
+
+
+//nav
+.logo_ff
+    font-family: 'Pattaya', serif
+    color: $green !important
+    font-size: 28px !important
+    line-height: 24px
+.navbar_bdb
+    border-bottom: 1px solid $green
+.page_bg
+    background-color: #fff
+.nav-link
+    color: $green !important
+    font-weight: 600
+    &:hover
+        font-weight: 800   
+
+//aboutme
+.aboutme_block1
+    height: 425px
+    position: relative
+    & .aboutpict, .abouttext
+        position: absolute
+.aboutme_block2
+    background-color: $dark_green
+    color: #fff
+.aboutname, .aboutme
+    position: relative
+    font-family: 'Volkhov', serif
+    font-size: 36px
+.aboutname
+    color: $dark_green
+.aboutme
+    left: 60%
+    color: $coffee
+.abouttext
+    top: 50%
+    transform: translateY(-50%)
+.aboutpict
+    right: 10%
+    top: 15%
+.aboutpict img
+        width: 400px
+.aboutme_block3
+    position: relative
+.coffee_block
+    position: absolute
+    width: 20%
+    height: 100%
+    background-color: $coffee
+    z-index: -1
+.green_block
+    position: absolute
+    right: 0
+    width: 20px
+    height: 130px
+    background-color: $green
+
+//work
+.card_style
+    border: 1px solid rgba(0,0,0,.125)
+    border-radius: 5px
+    background-color: #fff
+.pict
+    overflow: hidden
+    height: 123px
+    position: relative
+    cursor: pointer
+.card_img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    transition: all 1s ease-out
+.card_img:hover
+    width: 120%
+.web_logo
+    position: absolute
+    z-index: 5
+    right: 15px
+    top: 15px
+    width: 60px
+    height: 60px
+    background-color: #fff
+    border-radius: 50%
+    border: 2px solid $green
+    overflow: hidden
+    & img
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 80%
+
+.work_title
+    position: relative
+    text-align: center
+    color: $green
+    font-family: 'Volkhov', serif
+    font-size: 36px
+    line-height: 22px
+    padding-top: 48px
+.work_bg
+    position: absolute
+    background-color: $green
+    width: 100%
+    z-index: -1
+    height: 200px
+.list_title
+    font-size: 24px
+    font-weight: 600
+    color: #fff
+    text-align: center
+.list_item
+    font-size: 18px
+    color: #fff
+    text-align: center
+.card_title_cn
+    color: $green
+    font-size: 18px
+    font-weight: 600
+.card_kind
+    text-align: right !important
+@media screen and ( min-width: 992px )
+    .pict
+        height: 170px
+@media screen and ( min-width: 1199px  )
+    .pict
+        height: 200px
+
+//profolio
+.header
+    position: relative
+.header_text
+    position: absolute
+    top: 0
+    left: 0
+    padding-top: 16px
+    padding-left: 16px
+.header_title
+    font-size: 32px
+    font-weight: 700
+    color: $green
+.header_subtitle
+    font-size: 18px
+    font-weight: 600
+    color: $coffee
+.pro_subtitle h5
+    color: $dark_coffee
+.pro_bg1
+    padding-top: 3rem
+    background-color: $green
+    border-radius: 2.5rem
+.pro_bg2
+    padding-top: 3rem
+    background-color: $lightgreen
+    border-radius: 2.5rem
+.btn_green
+    background-color: $green
+    color: #fff
+    border-radius: 2rem
+    padding: 0.3rem 1.3rem
+    &:hover
+        color: #fff
+        background-color: lighten($green,10%)
+.square
+    display: inline-block
+    width: 20px
+    height: 20px
+    border: 1px solid #333
+.ypro_color1
+    background-color: #1C1C80
+.ypro_color2
+    background-color: #4EB2E6
+.ypro_color3
+    background-color: #FEB336
+.ypro_color4
+    background-color: #fff
+.ypro_color5
+    background-color: #F2F2F2
+.ypro_t1
+    color: #fff
+	
+//work0127
+.slick-slide
+    margin: 4px
+.product_img_sm img
+    width: 100%
+		
+		
