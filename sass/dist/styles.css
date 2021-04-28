@@ -421,6 +421,12 @@ html, body {
   border-radius: 2.5rem;
 }
 
+.pro_bg2 {
+  padding-top: 3rem;
+  background-color: #E4EDED;
+  border-radius: 2.5rem;
+}
+
 .btn_green {
   background-color: #007A79;
   color: #fff;

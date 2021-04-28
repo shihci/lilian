@@ -58,8 +58,7 @@ html, body {
   white-space: nowrap;
   top: 30%;
   left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); }
 
 .left_text-2 div {
   padding-left: 4px;
@@ -70,8 +69,7 @@ html, body {
   white-space: nowrap;
   top: 30%;
   right: 10%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
+  transform: translateY(-50%); }
 
 .left_text-3 div {
   padding-left: 4px;
@@ -79,16 +77,14 @@ html, body {
   color: #fff; }
 
 .name_text-2, .name-2 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   color: #006562; }
 
 .name_text-2 {
   font-size: 14px; }
 
 .name-2 {
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
   font-size: 42px; }
 
 .right_text-2 {
@@ -102,18 +98,15 @@ html, body {
   position: absolute;
   top: 60%;
   left: 0px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   height: 100px;
   color: white;
   opacity: 40%;
   padding: 0;
   margin: 0;
   line-height: 35px;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  font-family: 'Volkhov', serif;
+  writing-mode: vertical-lr;
+  font-family: "Volkhov", serif;
   font-size: 52px;
   z-index: 10; }
 
@@ -121,14 +114,12 @@ html, body {
   color: #fff; }
 
 .pict_name-2 {
-  font-family: 'Pattaya', sans-serif;
+  font-family: "Pattaya", sans-serif;
   font-size: 32px; }
 
 .pro_name-2 {
   font-size: 16px;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   margin: auto; }
 
 @media screen and (min-width: 768px) {
@@ -137,13 +128,12 @@ html, body {
     top: 20%;
     left: 38%;
     z-index: 5; }
+
   .img_block img {
     width: 350px; } }
-
 @media screen and (min-width: 975px) {
   .img_block img {
     width: 500px; } }
-
 @media screen and (min-width: 1025px) {
   .img_block {
     position: relative;
@@ -153,31 +143,33 @@ html, body {
     overflow: hidden;
     padding: 0;
     margin: 0; }
+
   .img_block div {
     position: relative;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
     height: 100%; }
+
   .img_block img {
     width: 100%; }
+
   .lig_block {
     width: 30%; }
+
   .darkg_block {
     width: 30%; }
+
   .left_text-2 {
     position: absolute;
     white-space: nowrap;
     top: 40%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); } }
-
+    transform: translate(-50%, -50%); } }
 .logo_ff {
-  font-family: 'Pattaya', serif;
+  font-family: "Pattaya", serif;
   color: #007A79 !important;
   font-size: 28px !important;
   line-height: 24px; }
@@ -206,7 +198,7 @@ html, body {
 
 .aboutname, .aboutme {
   position: relative;
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
   font-size: 36px; }
 
 .aboutname {
@@ -218,8 +210,7 @@ html, body {
 
 .abouttext {
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
+  transform: translateY(-50%); }
 
 .aboutpict {
   right: 10%;
@@ -260,10 +251,8 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
-  -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out; }
 
 .card_img:hover {
@@ -284,15 +273,14 @@ html, body {
     position: relative;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 80%; }
 
 .work_title {
   position: relative;
   text-align: center;
   color: #007A79;
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
   font-size: 36px;
   line-height: 22px;
   padding-top: 48px; }
@@ -326,11 +314,9 @@ html, body {
 @media screen and (min-width: 992px) {
   .pict {
     height: 170px; } }
-
 @media screen and (min-width: 1199px) {
   .pict {
     height: 200px; } }
-
 .header {
   position: relative; }
 
@@ -357,6 +343,11 @@ html, body {
 .pro_bg1 {
   padding-top: 3rem;
   background-color: #007A79;
+  border-radius: 2.5rem; }
+
+.pro_bg2 {
+  padding-top: 3rem;
+  background-color: #E4EDED;
   border-radius: 2.5rem; }
 
 .btn_green {
@@ -391,4 +382,9 @@ html, body {
 
 .ypro_t1 {
   color: #fff; }
-/*# sourceMappingURL=styles.css.map */
+
+.slick-slide {
+  margin: 4px; }
+
+.product_img_sm img {
+  width: 100%; }
