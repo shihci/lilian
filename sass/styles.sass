@@ -1,3 +1,4 @@
+
 $dark_green: #002A29
 $lightgreen: #E4EDED
 $green: #007A79
@@ -13,7 +14,6 @@ $coffee: #976F4F
 html,body
     padding: 0
     margin: 0
-
 
 .home_ul
     list-style: none
@@ -43,7 +43,20 @@ html,body
     display: inline-block
     vertical-align: top
     font-size: inherit
-    
+.t12
+    position: relative
+    height: 100%
+    width: 100%
+    overflow: hidden
+    & div
+        width: 100%
+        height: 100%
+    & img
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        height: 100%
+
 .lig_block
     width: calc(100% / 3 * 2)
     background-color: $light_green
@@ -52,9 +65,12 @@ html,body
     background-color: $dark_green
 .img_block
     position: absolute
-    top: 20%
+    top: 0%
     left: 0%
     z-index: 5
+    & div
+        position: absolute
+        bottom: 0
 .img_block img
     width: 300px
 .dib-2
@@ -246,8 +262,10 @@ html,body
     transform: translate(-50%,-50%)
     width: 100%
     transition: all 1s ease-out
-.card_img:hover
+.card_style:hover .card_img,.card:hover .card_img
     width: 120%
+    color: red
+
 .web_logo
     position: absolute
     z-index: 5
@@ -315,6 +333,8 @@ html,body
     font-size: 32px
     font-weight: 700
     color: $green
+.text_shadow
+    text-shadow: 0.1em 0.1em 0.2em black
 .header_subtitle
     font-size: 18px
     font-weight: 600
@@ -324,11 +344,11 @@ html,body
 .pro_bg1
     padding-top: 3rem
     background-color: $green
-    border-radius: 2.5rem
+    border-radius: 2.5rem 2.5rem 0 0
 .pro_bg2
     padding-top: 3rem
     background-color: $lightgreen
-    border-radius: 2.5rem
+    border-radius: 2.5rem 2.5rem 0 0
 .btn_green
     background-color: $green
     color: #fff
@@ -352,7 +372,15 @@ html,body
     background-color: #fff
 .ypro_color5
     background-color: #F2F2F2
-.ypro_t1
+.jsun_color1
+    background-color: #2D6BB0
+.jsun_color2
+    background-color: #0E376C
+.jsun_color3
+    background-color: #F29132
+.jsun_color4
+    background-color: #fff
+.jsun_t1
     color: #fff
 	
 //work0127
@@ -360,5 +388,12 @@ html,body
     margin: 4px
 .product_img_sm img
     width: 100%
+	
+//share
+.source_a
+    text-decoration: none
+    color: inherit
+.source_a:hover
+    color: inherit
 		
 		
