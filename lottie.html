@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div
+    {
+        width: 200px;
+    }
+</style>
+<body>
+    <div id="test"></div>
+    <div id="svgContainer"></div>
+   
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
+<script>
+    var svgContainer=document.getElementById("svgContainer")
+    var lottie1=bodymovin.loadAnimation({
+    wrapper: svgContainer,
+    animType: 'svg',
+    loop: true,
+    autoplay: false,
+    path: 'lottie/lightV3.json'
+    });
+    // lottie1.playSegments([100,105],true);
+    lottie1.addEventListener("DOMLoaded", () => {
+        
+      lottie1.playSegments([31, 65], false);
+});
+// lottie1.playSegments([25, 35], true);
+
+    var test=document.getElementById("test")
+    var lottie2=lottie.loadAnimation({
+    wrapper: test,
+    animType: 'svg',
+    loop: true,
+    path: 'https://assets7.lottiefiles.com/packages/lf20_s1nooojy.json'
+    });
+
+</script>
+</html>

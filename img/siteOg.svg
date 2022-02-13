@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="465" height="438" viewBox="0 0 465 438">
+  <g id="组_363" data-name="组 363" transform="translate(-88 -2330)">
+    <rect id="矩形_162" data-name="矩形 162" width="76" height="32" rx="2" transform="translate(227 2463)" fill="#137f00"/>
+    <rect id="矩形_167" data-name="矩形 167" width="76" height="32" rx="2" transform="translate(227 2549.5)" fill="#137f00"/>
+    <rect id="矩形_177" data-name="矩形 177" width="76" height="39" rx="2" transform="translate(227 2638)" fill="#137f00"/>
+    <rect id="矩形_176" data-name="矩形 176" width="76" height="32" rx="2" transform="translate(392.5 2549.5)" fill="#f27000"/>
+    <rect id="矩形_178" data-name="矩形 178" width="76" height="39" rx="2" transform="translate(392.5 2638)" fill="#f27000"/>
+    <rect id="矩形_169" data-name="矩形 169" width="76" height="32" rx="2" transform="translate(88 2552)" fill="#0d78cf"/>
+    <rect id="矩形_181" data-name="矩形 181" width="76" height="39" rx="2" transform="translate(88 2638)" fill="#0d78cf"/>
+    <rect id="矩形_166" data-name="矩形 166" width="76" height="32" rx="2" transform="translate(394 2463)" fill="#f27000"/>
+    <rect id="矩形_164" data-name="矩形 164" width="76" height="32" rx="2" transform="translate(310 2463)" fill="#d30000"/>
+    <rect id="矩形_171" data-name="矩形 171" width="76" height="32" rx="2" transform="translate(265 2408)" fill="#137f00"/>
+    <rect id="矩形_174" data-name="矩形 174" width="76" height="32" rx="16" transform="translate(265 2330)" fill="#6a2316"/>
+    <rect id="矩形_182" data-name="矩形 182" width="76" height="32" rx="16" transform="translate(265 2736)" fill="#6a2316"/>
+    <rect id="矩形_173" data-name="矩形 173" width="76" height="32" rx="2" transform="translate(88 2408)" fill="#0d78cf"/>
+    <rect id="矩形_172" data-name="矩形 172" width="76" height="32" rx="2" transform="translate(437 2408)" fill="#f27000"/>
+    <rect id="矩形_168" data-name="矩形 168" width="76" height="32" rx="2" transform="translate(310 2549.5)" fill="#d30000"/>
+    <rect id="矩形_179" data-name="矩形 179" width="76" height="39" rx="2" transform="translate(310 2638)" fill="#d30000"/>
+    <rect id="矩形_175" data-name="矩形 175" width="76" height="32" rx="2" transform="translate(475.5 2549.5)" fill="#f27000"/>
+    <rect id="矩形_180" data-name="矩形 180" width="76" height="39" rx="2" transform="translate(475.5 2638)" fill="#f27000"/>
+    <rect id="矩形_165" data-name="矩形 165" width="76" height="32" rx="2" transform="translate(477 2463)" fill="#f27000"/>
+    <text id="借出" transform="translate(110 2430)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">借出</tspan></text>
+    <text id="人員刷卡" transform="translate(94 2575)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">人員刷卡</tspan></text>
+    <text id="刷取_物品條碼" data-name="刷取
+物品條碼" transform="translate(125 2655)" fill="#fff" font-size="14" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="-14" y="0">刷取</tspan><tspan x="-28" y="16">物品條碼</tspan></text>
+    <text id="刷取_物品條碼-2" data-name="刷取
+物品條碼" transform="translate(266 2655)" fill="#fff" font-size="14" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="-14" y="0">刷取</tspan><tspan x="-28" y="16">物品條碼</tspan></text>
+    <text id="刷取_物品條碼-3" data-name="刷取
+物品條碼" transform="translate(348 2655)" fill="#fff" font-size="14" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="-14" y="0">刷取</tspan><tspan x="-28" y="16">物品條碼</tspan></text>
+    <text id="刷取_物品條碼-4" data-name="刷取
+物品條碼" transform="translate(430 2655)" fill="#fff" font-size="14" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="-14" y="0">刷取</tspan><tspan x="-28" y="16">物品條碼</tspan></text>
+    <text id="刷取_物品條碼-5" data-name="刷取
+物品條碼" transform="translate(513 2655)" fill="#fff" font-size="14" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="-14" y="0">刷取</tspan><tspan x="-28" y="16">物品條碼</tspan></text>
+    <text id="人員刷卡-2" data-name="人員刷卡" transform="translate(233 2572.5)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">人員刷卡</tspan></text>
+    <text id="人員刷卡-3" data-name="人員刷卡" transform="translate(398.5 2572.5)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">人員刷卡</tspan></text>
+    <text id="人員刷卡-4" data-name="人員刷卡" transform="translate(316 2572.5)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">人員刷卡</tspan></text>
+    <text id="人員刷卡-5" data-name="人員刷卡" transform="translate(481.5 2572.5)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">人員刷卡</tspan></text>
+    <text id="正常歸還" transform="translate(233 2485)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">正常歸還</tspan></text>
+    <text id="資產轉入" transform="translate(402 2485)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">資產轉入</tspan></text>
+    <text id="異常歸還" transform="translate(316 2485)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">異常歸還</tspan></text>
+    <text id="資產專出" transform="translate(485 2485)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">資產專出</tspan></text>
+    <text id="歸還" transform="translate(287 2430)" fill="#f1f4f2" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">歸還</tspan></text>
+    <text id="首頁" transform="translate(287 2353)" fill="#fff" font-size="16" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">首頁</tspan></text>
+    <text id="首頁-2" data-name="首頁" transform="translate(287 2759)" fill="#fff" font-size="16" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">首頁</tspan></text>
+    <text id="資產移轉" transform="translate(443 2430)" fill="#fff" font-size="15" font-family="MicrosoftJhengHeiBold, Microsoft JhengHei"><tspan x="0" y="0">資產移轉</tspan></text>
+    <line id="直线_25" data-name="直线 25" x1="170.5" y2="47" transform="translate(132.5 2361.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_26" data-name="直线 26" y1="47" transform="translate(303 2362)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_43" data-name="直线 43" x1="178" y1="59" transform="translate(125 2677)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_27" data-name="直线 27" x1="171.5" y1="47" transform="translate(303 2361.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_28" data-name="直线 28" y2="112" transform="translate(125 2440)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_29" data-name="直线 29" x1="45" y1="23" transform="translate(303 2440)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_32" data-name="直线 32" x1="45" y1="23" transform="translate(475 2440)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_31" data-name="直线 31" y1="23" x2="45" transform="translate(258 2440)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_33" data-name="直线 33" y1="23" x2="45" transform="translate(430 2440)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_34" data-name="直线 34" y2="55" transform="translate(265.5 2494.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_41" data-name="直线 41" y2="55" transform="translate(265.5 2583)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_42" data-name="直线 42" y2="55" transform="translate(125 2583)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_36" data-name="直线 36" y2="55" transform="translate(431 2494.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_39" data-name="直线 39" y2="55" transform="translate(431 2583)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_35" data-name="直线 35" y2="55" transform="translate(348 2494.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_40" data-name="直线 40" y2="55" transform="translate(348 2583)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_37" data-name="直线 37" y2="55" transform="translate(513.5 2494.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_38" data-name="直线 38" y2="55" transform="translate(513.5 2583)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_44" data-name="直线 44" y1="59" x2="210" transform="translate(303 2677)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_45" data-name="直线 45" y1="61" x2="128" transform="translate(303 2675)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_46" data-name="直线 46" x1="38" y1="59" transform="translate(265 2677)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="直线_47" data-name="直线 47" y1="59" x2="45" transform="translate(303 2677)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

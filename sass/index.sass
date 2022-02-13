@@ -1,0 +1,1276 @@
+$darkGreen: #002A29
+$Green: #007A79
+$lightGreen: #F1F4F2
+$lightcoffee: #FFFCF6
+$coffee: #650C0C
+$lightCoffee: #C48E28
+$darkYellow: #FFB336
+$middelGray: #555555
+$darkBlue: #1C1C80
+$Blue: #54C3F1
+    
+*
+    //border: 1px solid #000
+    box-sizing: border-box 
+    font-family: "微軟正黑體",Arial
+.bd
+    border: 1px solid blue
+html,body
+    position: relative
+    height: 100%
+    margin: 0
+    padding: 0
+body
+    position: relative
+ul, li
+    list-style: none
+    padding: 0px
+    margin: 0px
+h1,h2,h3,h3,h4,h5,h6
+    font-size: 16px
+    margin-bottom: 0.5rem
+p
+    font-size: 15px
+    margin-bottom: 0px
+.por
+    position: relative
+.menu ,.closed
+    position: absolute
+    top: 12px
+    right: 12px
+    display: inline-block
+    width: 48px
+    height: 48px
+    padding: 10px
+    border-radius: 99em
+    background-color: #fff
+    opacity: 0.6
+    z-index: 2
+    & div
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        & img
+            display: inline-block
+            font-size: 24px
+            flex: 1
+.contactBtn
+    position: absolute
+    right: 12px
+    bottom: 12px
+    & div
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 28px
+        padding: 4px
+        margin-top: 8px
+        border-radius: 99em
+        background-color: #fff
+        opacity: 0.8
+        cursor: pointer
+        & img
+            display: inline-block
+            font-size: 24px
+            flex: 1
+
+
+.contact_icon
+    width: 24px
+    
+.main_home
+    display: flex
+   
+.main_block
+    overflow: hidden
+    position: relative
+
+.left
+    background-color: $lightGreen
+    flex: 1
+.right
+    display: none
+    background-color: $darkGreen
+.center
+    width: 35%
+    display: none
+.index_title, .index_p1
+    vertical-align: top
+    font-family: 'Noto Serif TC', serif
+    font-weight: 600
+
+.index_title
+    font-size: 36px
+.center_img
+    position: relative
+    height: 100%
+    background-color: #fff
+.index_img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    min-height: 100%
+    max-height: 100%
+    opacity: 0
+    animation: round 25s linear infinite
+
+@keyframes round
+
+    4%
+        opacity: 1
+        left: 50%
+    20%
+        opacity: 1
+        left: 50%
+    24%
+        opacity: 1
+        left: 160%
+    26%
+        opacity: 0
+        left: 160%
+    28%
+        opacity: 0
+        left: -60%
+
+.index_img:nth-child(5)
+	animation-delay: 0s
+.index_img:nth-child(4)
+	animation-delay: 5s
+.index_img:nth-child(3)
+	animation-delay: 10s
+.index_img:nth-child(2)
+	animation-delay: 15s
+.index_img:nth-child(1)
+	animation-delay: 20s
+    
+.index_pad_img
+    width: 200px
+
+.index_pos
+    position: relative
+    top: 45%
+    left: 50%
+    transform: translate(-50%,-50%)
+    display: inline-block
+    vertical-align: top
+   
+.menu_area
+    position: absolute
+    width: 100%
+    bottom: 100% //100
+    // height: 0% //0
+    left: 0
+    right: 0
+    background-color: rgba(241,244,242,0.9)
+    transition: 0.8s ease
+    z-index: 2
+.menu_ul1
+    position: relative
+    top: 40%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+    width: 60%
+
+
+
+.menu_li1
+    display: inline-block
+    float: left
+    width: 20%
+    & a
+        font-family: 'Noto Serif TC', serif
+        font-size: 20px
+        color: $darkGreen
+        font-weight: 600
+        text-decoration: none
+
+        & div
+            font-size: 14px
+            line-height: 12px
+    
+.menu_textArea
+    position: relative
+    margin-top: 70px
+    
+    text-align: center
+    width: 60%
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+    @media screen and ( min-width:  768px)
+        top: 40%
+        transform: translateY(-50%)
+@media screen and ( min-width: 768px )
+    .flex_ul1
+        display: flex
+    .flex_li1
+        display: inline-block
+.flex_li1
+    flex: 1
+    margin-bottom: 0.5rem
+    @media screen and ( min-width: 768px )
+         margin-bottom: 0
+    & a
+        font-family: 'Noto Serif TC', serif
+        font-size: 15px
+        color: $darkGreen
+        font-weight: 600
+        text-decoration: none
+        @media screen and ( min-width: 768px )
+            font-size: 16px
+        @media screen and ( min-width: 992px )
+            font-size: 20px
+        & div
+            font-size: 14px
+            line-height: 12px
+
+
+@media screen and ( min-width: 768px )
+    .index_pad_img
+        width: 500px
+
+    .right
+        display: block
+        width: 20.8%
+
+@media screen and ( max-width: 1024.98px )
+    .main_home
+        height: 100vh
+        //控制index.html中間那塊頁面大小縮放
+@media screen and ( min-width: 1025px )
+    .main_home
+        height: 100vh
+        background: linear-gradient( 90deg,$lightGreen 0%, $lightGreen 50%,$darkGreen 50%, $darkGreen 100%)
+        // aspect-ratio: 192 / 108
+    .center
+        display: block
+    .left,.right
+        flex: 1
+    .index_title, .index_p1
+        display: inline-block
+        -webkit-writing-mode: vertical-lr
+        writing-mode: vertical-lr
+    .index_pad_img
+        display: none
+    .index_pos
+        width: 180px
+
+
+
+//body
+.title_text
+    font-size: 14px
+    color: $Green
+    z-index: 5
+@media screen and (min-width:767.98px)
+    .title_text.has_active
+        background: linear-gradient(90deg, white 50%,$Green 50%)
+        background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+    .title_text.has_active2
+        color: white
+
+    //color: $Green
+   
+.main_page
+    position: relative
+    min-height: 100vh
+    //height: 100%
+    background-color: $lightGreen
+.about_flex-center
+    display: flex
+    align-items: center
+    @media screen and (min-width: 1025px)
+        height: 90vh
+.about_photo
+    display: none
+    position: absolute
+    width: 50%
+    right: 0
+    @media screen and (min-width: 1025px)
+        display: block
+.aboutme1
+    position: relative
+    overflow: hidden
+    @media screen and (min-width: 1025px)
+         height: 100vh
+.about_td1
+    -ms-flex: 0 0 28%
+    flex: 0 0 28%
+    max-width: 28%
+    @media screen and (min-width: 450px)
+        -ms-flex: 0 0 24%
+        flex: 0 0 24%
+        max-width: 24%
+    @media screen and (min-width: 500px)
+        -ms-flex: 0 0 18%
+        flex: 0 0 18%
+        max-width: 18%
+    @media screen and (min-width: 992px)
+        -ms-flex: 0 0 26%
+        flex: 0 0 26%
+        max-width: 26%
+    @media screen and (min-width: 992px)
+        -ms-flex: 0 0 20%
+        flex: 0 0 20%
+        max-width: 20%
+    @media screen and (min-width: 1200px)
+        -ms-flex: 0 0 16%
+        flex: 0 0 16%
+        max-width: 16%
+    @media screen and (min-width: 1400px)
+        -ms-flex: 0 0 14%
+        flex: 0 0 14%
+        max-width: 14%
+.about_td2
+    -ms-flex: 0 0 70%
+    flex: 0 0 70%
+    max-width: 70%
+    @media screen and (min-width: 992px)
+        -ms-flex: 0 0 74%
+        flex: 0 0 74%
+        max-width: 74%
+    @media screen and (min-width: 992px)
+        -ms-flex: 0 0 80%
+        flex: 0 0 80%
+        max-width: 80%
+    @media screen and (min-width: 1200px)
+        -ms-flex: 0 0 84%
+        flex: 0 0 84%
+        max-width: 84%
+    @media screen and (min-width: 1400px)
+        -ms-flex: 0 0 86%
+        flex: 0 0 86%
+        max-width: 86%
+.title_cn
+    font-size: 21px
+    font-family: 'Noto Serif TC', serif
+    color: $lightCoffee
+    font-weight: 600
+    
+.title_en
+    font-size: 14px
+    font-family: 'Noto Serif TC', serif
+    color: $coffee
+    font-weight: 600
+    margin-top: -8px
+.bgc_darkgreen
+    background-color: $Green
+//about
+.mb-125-5
+    margin-bottom: 3rem 
+.title_sm
+    font-size: 16px
+    font-family: 'Noto Serif TC', serif
+    color: $Green
+    font-weight: 600
+.about_img1
+    width: 80%
+
+        
+@media screen and ( min-width: 768px )
+    .col-769-3
+        -ms-flex: 0 0 25%
+        flex: 0 0 25%
+        max-width: 25%
+@media screen and ( min-width: 1025px )
+    .about_img-none
+        display: none
+    .about_active
+        background: linear-gradient(90deg, $Green 50%,white 50%)
+        background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+    .mb-125-5
+        margin-bottom: 0
+    
+
+.title_skill
+    font-size: 15px
+    font-family: 'Noto Serif TC', serif
+    color: $coffee
+    font-weight: 600
+
+//works
+@media screen and ( min-width: 1200px )
+    .col-2_10
+        flex: 0 0 auto
+        width: 20%
+    
+.work_nav,.resource_nav
+     text-align: right
+.work_nav div,.resource_nav div ,.work_nav div
+    display: inline-block
+    padding: 2px 12px
+    margin-left: 2px
+    margin-right: 2px
+    color: $Green
+    cursor: pointer
+.work_nav .active,.resource_nav .active ,.work_nav .active
+    background-color: $Green
+    border-radius: 20px
+    color: #fff
+.hover_inform
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    border-radius: 5px
+    overflow: hidden
+    width: 100%
+    height: 100%
+    transition: 0.6s ease
+    background-color: rgba(5,5,5,0.5) 
+    @media screen and (min-width: 1200px)
+        height: 0%
+        background-color: rgba(5,5,5,0.0) 
+.work_item:hover .hover_inform
+    height: 100%
+    background-color: rgba(5,5,5,0.5) 
+.work_text
+    color: white
+    font-size: 14px
+    position: absolute
+    bottom: 8px
+    left: 50%
+    transform: translateX(-50%)
+    width: 90%
+.work_item
+    border-radius: 5px
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+    cursor: pointer
+    position: relative
+    aspect-ratio: 16 / 11   
+    & img
+        width: 100%
+//page
+.main_page.page_Swiper
+    height: 100%
+.page_subTitle
+    color: $Green
+    font-size: 14px
+.page_text
+    font-size: 15px 
+    color: #333333   
+.page_btn
+    display: inline-block
+    border: 0
+    padding: 2px 10px
+    margin-left: 2px
+    margin-right: 2px
+    background-color: $Green
+    color: white
+    cursor: pointer
+//resource
+.hover_resource
+    position: absolute
+    bottom: 0px
+    left: 0
+    right: 0
+    border-radius: 5px
+    border-top-left-radius: 0px
+    border-top-right-radius: 0px
+    overflow: hidden
+    width: 100%
+    height: 60px
+    transition: 0.6s ease
+    background-color: rgba(255,255,255,1)
+
+
+.resource_text
+    // color: white
+    font-size: 14px
+    position: absolute
+    top: 6px
+    left: 50%
+    transform: translateX(-50%)
+    width: 90%
+    text-align: center
+    
+.resource_item
+    border-radius: 5px
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+    cursor: pointer
+    position: relative
+    aspect-ratio: 68 / 61
+    overflow: hidden
+
+    &:hover .hover_resource
+        background-color: rgba(255,255,255,0.8)
+        height: 100% 
+        border-radius: 5px
+    & img
+        width: 100%
+        
+
+.rs_t1
+    font-size: 18px
+    color: $coffee
+    
+.rs_t2
+    font-size: 14px
+    color: $lightCoffee
+.rs_p
+
+    font-size: 14px
+    color: #555
+    padding-top: 6px
+//swiper css
+.poa_header
+    position: absolute
+    z-index: 99
+    left: 50%
+    // margin-top: 24px
+    // margin-bottom: 24px
+    transform: translateX(-50%)
+.swiper
+    width: 100%
+    height: 100%
+.swiper-slide
+    border: 1px solid #000
+    // text-align: center
+    font-size: 15px
+    /* Center slide text vertically */
+    // display: flex
+    // -webkit-box-pack: center
+    // -ms-flex-pack: center
+    padding-top: 80px
+    padding-left: 16px
+    padding-right: 16px
+    padding-bottom: 16px
+    overflow: hidden
+    // justify-content: center
+    // -webkit-box-align: center
+    // -ms-flex-align: center
+    // align-items: center
+// .swiper-slide img
+//     display: block
+//     width: 90%
+//     // height: 100%
+//     object-fit: cover
+
+
+//mywork_css-work1
+
+.web-content
+    min-height: calc( 60vh - 20px )
+    .textWhite
+        @media screen and ( min-width: 768px ) 
+            color: #fff!important
+    .ypro_titleColor
+        color: $darkBlue!important
+        @media screen and ( min-width: 768px ) 
+            color: #fff!important
+.work_topImg
+    width: 100%
+    max-height: 80vh
+    border-radius: 8px
+    //aspect-ratio: 1920 / 930
+    overflow: hidden
+    border: 1px solid $Green
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
+
+.work_title
+    font-family: 'Noto Serif TC', serif
+    font-size: 20px
+    font-weight: 600
+    padding-bottom: 8px
+    color: $Green
+.work_subTitle
+    font-size: 16px
+    font-weight: 600
+    
+.work_topImg img
+    width: 100%
+    object-fit: cover
+
+.work-row
+    --bs-gutter-x: 2rem
+.work_one_title
+    text-align: center
+    font-family: Arial, serif
+    font-weight: bold
+    font-size: 74px
+    padding-top: 36px
+    color: $Green
+    margin-bottom: 0
+    @media screen and ( min-width: 992px )
+        font-size: 74px
+.work_one_title.fz
+    font-size: 60px
+    line-height: 26px
+    padding-top: 0px
+    padding-bottom: 1.2rem
+    margin-bottom: 0
+    @media screen and ( min-width: 992px )
+        font-size: 60px
+.work_one_title.C_ypro
+    color: transparent
+    -webkit-text-stroke: 1.5px $darkBlue
+   
+        
+.work_one_p
+    font-size: 20px
+    font-family: 'Noto Serif TC', "微軟正黑體", Arial, serif
+    font-weight: 600
+    text-align: center
+    color: $darkGreen
+    margin-bottom: 0
+.work_one_p_en
+    text-align: center
+    font-family: 'Noto Serif TC', "微軟正黑體", Arial, serif
+    font-size: 14px
+    color: $darkGreen
+    margin-bottom: 0
+.work_one_p.C_ypro
+    color: $darkBlue
+.work_one_p_en.C_ypro
+    color: $Blue
+
+.swatch
+    height: 25px
+    width: 25px
+    flex: 0 0 auto
+    background-color: #fff
+    display: inline-block
+.sw_ypro1
+    background-color: $darkBlue
+    border: 1px solid #fff
+.sw_ypro2
+    background-color: white
+    border: 1px solid #eee
+.sw_ypro3
+    background-color: $darkYellow
+    border: 1px solid #fff
+.sw_ypro4
+    background-color: $Blue
+    border: 1px solid #fff
+.sw_ypro5
+    background-color: $middelGray
+    border: 1px solid #fff
+.btnWeb
+    background-color: #fff
+    border-radius: 25px
+    font-size: 15px
+    font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+    padding: 6px 45px
+    
+    &:hover
+        font-weight: 600
+        box-shadow: 0px 0px 10px rgba(255,255,255,0.6)
+    &.ypro
+        background-color: $darkBlue
+        color: white
+        
+        @media screen and ( min-width: 768px )
+            background-color: white
+            color: $darkBlue
+            
+
+.swiper-slide.bg_ypro
+    border: 1px solid #000
+    //background: linear-gradient(360deg, $darkBlue 50%,transparent 50%)
+    @media screen and ( min-width:  768px)
+        background: linear-gradient(90deg, $darkBlue 50%,transparent 50%)
+.swiper-slide.bg_ypro2
+    background-color: $darkBlue
+.webP2Box
+    display: none
+    @media screen and ( min-width: 768px )
+        display: block
+        position: absolute
+        height: 100%
+        top: 0
+        left: 50%
+        right: 0%
+        padding: 0
+        background-image: url(../img/)
+        overflow: hidden
+.webP2Img
+    height: 100%
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    text-align: center
+.max-GridBox
+    width: 100%
+    padding-left: 0.75rem
+    padding-right: 0.75rem
+    margin-right: auto
+    margin-left: auto
+    
+    @media screen and ( min-width: 576px )
+        max-width: 540px
+    @media screen and ( min-width: 768px )
+        max-width: 720px
+    @media screen and ( min-width: 992px )
+        max-width: 960px
+    @media screen and ( min-width: 1200px )
+        max-width: 1140px
+    @media screen and ( min-width: 1400px )
+        max-width: 1320px
+    //>div
+        //border-radius: 20px
+        //overflow: hidden
+    >div>div
+        border: 0px solid #000
+        background-color: #fff
+        display: flex
+        align-items: center
+        padding: 0.5rem 1rem
+        color: $darkBlue
+        @media screen and ( min-width: 768px )
+            padding: 3.5rem 3rem
+            &:first-child
+                border-top-left-radius: 10px
+                >div:nth-child(1)
+                    background-color: darken($lightGreen, 0%)
+            &:nth-child(2)
+                border-top-right-radius: 10px
+                background-color: darken($lightGreen, 5%)
+                >div:nth-child(1)
+                    background-color: #fff
+            &:nth-child(3)
+                border-bottom-left-radius: 10px
+                background-color: darken($lightGreen, 5%)
+                >div:nth-child(1)
+                    background-color: #fff
+                
+            &:nth-child(4)
+                border-bottom-right-radius: 10px
+                >div:nth-child(1)
+                    background-color: darken($lightGreen, 0%)
+
+        >div:nth-child(1)
+            flex: 0 0 auto
+            position: relative
+            //border: 1px solid #000
+            height: 70px
+            width: 70px
+            border-radius: 99rem
+            @media screen and ( min-width: 768px )
+                height: 120px
+                width: 120px
+                
+            img
+                position: relative
+                height: 100%
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                @media screen and ( min-width: 768px )
+                    height: 70%
+            
+        >div:nth-child(2)
+            padding-left: 0.5rem
+            
+            @media screen and ( min-width: 768px )
+                padding-left: 2rem
+            >p
+                font-size: 14px
+                @media screen and ( min-width: 400px )
+                    font-size: 15px
+
+
+
+//系統網頁設計 workpage5
+.swiper-slide.bg_halfGreen
+    border: 1px solid #000
+    background: linear-gradient(90deg, $Green 50%,transparent 50%)
+    @media screen and ( max-width:  767.98px)
+        background: linear-gradient(360deg, $Green 50%,transparent 50%)
+.systembox
+    position: relative
+    height: 85vh
+.system-title
+    font-size: 21px
+    font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+    color: $Green
+    @media screen and ( min-width:  991px)
+        position: absolute
+        top: 45%
+        left: 50%
+        transform: translate(-50%,-50%)  
+    @media screen and ( min-width: 1200px )
+        font-size: 28px
+    @media screen and ( min-width: 1500px )
+        font-size: 36px
+.system-subtitle
+    font-size: 18px
+    font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+    color: $Green
+    @media screen and ( min-width: 991px )
+        font-size: 24px
+    span
+        font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+.system-memo
+    position: absolute
+    bottom: 0
+    font-size: 15px
+    color: $darkGreen
+    @media screen and ( max-height: 600px )
+        bottom: 24px
+        
+.swiper-slide.bg_system01
+    border: 1px solid #000
+    background: linear-gradient(90deg, $Green 35%,transparent 35%)
+    @media screen and ( max-width: 519px )
+        background: transparent
+        
+.col-35
+    -ms-flex: 0 0 35%
+    flex: 0 0 35%
+    max-width: 35%
+    @media screen and ( max-width: 519px )
+        -ms-flex: 0 0 100%
+        flex: 0 0 100%
+        max-width: 100%
+    &.p-set
+        padding-left: 0
+        padding-right: 3rem
+        @media screen and ( min-width: 992px )
+            padding-left: 3rem
+            padding-right: 3rem
+        @media screen and ( max-width: 519px )
+            padding-right: 0
+            
+        
+.col-65
+    -ms-flex: 0 0 65%
+    flex: 0 0 65%
+    max-width: 65%
+    @media screen and ( max-width: 519px )
+        -ms-flex: 0 0 100%
+        flex: 0 0 100%
+        max-width: 100%
+
+
+.fac8-p1
+    position: relative
+    top: 45%
+    transform: translateY(-50%)
+    @media screen and ( max-width: 519px )
+        background-color: $Green
+        padding: 8px      
+    &::before
+        content: ""
+        color: white
+        position: absolute
+        //margin-left: -16px
+        width: 1px
+        top: 30px
+        height: 290px
+        background-color: white
+        @media screen and ( max-width: 519px )
+            display: none
+    & h2
+        height: 320px
+        color: white
+        @media screen and ( max-width: 519px )
+            height: inherit
+            
+.fac8-p2
+    position: relative
+    color: white
+    font-size: 14px
+    @media screen and ( min-width: 991px )
+        font-size: 15px
+.fac8-p3
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    div img
+        width: 80%
+        @media screen and ( min-width: 991px)
+            width: 90%
+        @media screen and ( min-width: 1000px ) and ( max-width: 1025px ) and (min-height: 1300px)
+            width: 100%
+        @media screen and ( max-width: 519px )
+            width: 90%
+            
+        
+            
+.fac8-p4
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    &::before
+        content: ""
+        position: absolute
+        //margin-left: -16px
+        width: 1px
+        height: 140px
+        background-color: $Green
+        margin-left: -16px
+        @media screen and (min-width: 768px)
+            background-color: white
+    & h2
+        height: 85px
+        @media screen and (min-width: 768px)
+            color: white
+    & p
+        color: $Green
+        
+        @media screen and (min-width: 768px)
+            color: #fff
+            padding-right: 2rem
+.fac8-p5
+    padding-left: 1rem
+    padding-right: 1rem
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    @media screen and (min-width: 768px)
+        padding-left: 3rem
+        padding-right: 3rem
+.fac8-p6
+    display: flex
+    width: 100%
+    height: 70vh
+    justify-content: space-around
+    align-items: flex-start
+    @media screen and (min-width: 1000px)and (max-width: 1025px)  and (min-height:1300px)
+        flex-direction: column
+    @media screen and (max-width: 991.98px)
+        flex-direction: column
+.fac8-p7
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and (min-width: 1000px) and (max-width: 1025px) and (min-height:1300px)
+        justify-content: start
+        display: block
+        align-self: center
+        width: 40%
+    @media screen and (max-width: 991.98px)
+        justify-content: start
+        display: block
+        align-self: center
+        width: 50%
+    @media screen and (max-width: 767.98px)
+        width: 60%
+    @media screen and (max-width: 650.98px)
+        width: 300px
+    @media screen and (max-width: 650.98px)
+        width: 240px
+    @media screen and (max-width: 350.98px)
+        width: 190px
+    & .fac8TY_pd
+        width: 100%
+        padding-left: 16px
+        padding-right: 16px
+        @media screen and (min-width: 1000px)and (max-width: 1025px)  and (min-height:1300px)
+            width: 130%
+    & .fac8TY_nb
+        width: 80px
+        position: absolute
+        top: 100%
+        right: -10%
+        transform: translateY(-50%)
+        @media screen and (min-width: 1500px)
+            width: 100px
+        @media screen and ( max-width: 640px )
+            width: 50px
+        @media screen and (max-width: 350.98px)
+            top: calc( 100% - 20px )
+            width: 30px 
+
+@media screen and (min-width: 992px) 
+    .r1
+        align-self: flex-end
+    .r2
+        align-self: center
+    .r3
+        align-self: flex-start
+.fac8PT-title
+    font-size: 36px
+    font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+    color: $Green
+    font-weight: 600
+    @media screen and (max-width: 640px)
+        font-size: 21px
+    @media screen and ( max-width: 440px )
+        font-size: 18px
+.systembox.line::before
+    content: ""
+    position: absolute
+    //margin-left: -16px
+    width: 1.5px
+    height: 100%
+    background-color: $Green
+    margin-left: -32px
+    @media screen and ( max-width: 440px )
+        display: none
+.Os1,.Os3,.Os5
+    display: flex
+    justify-content: center
+    align-items: center
+    aspect-ratio: 77 / 30
+    overflow: hidden
+    margin-bottom: 0.25rem
+    @media screen and ( min-width: 576px )
+        aspect-ratio: 77 / 50
+    img
+        width: 90%
+        @media screen and ( min-width: 576px )
+            width: 100%
+           
+.Os2,.Os4,.Os6
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 0.25rem
+    font-size: 14px
+    
+.Os2
+    background-color: $Green
+    color: white    
+.Os4
+    background-color: $Green
+    color: white 
+.Os6
+    background-color: $Green
+    color: white
+.fac8-p8
+    display: flex
+    @media screen and ( min-width: 991px )
+        justify-content: center
+        align-items: center
+    h2
+        padding-bottom: 16px
+        padding-left: 16px
+        padding-right: 16px
+        border-bottom: 1px solid $Green
+        margin-left: -16px
+        padding-right: -16px
+    p
+        
+        color: $coffee
+// .fac8-p8
+//     position: relative
+//     @media screen and ( min-width: 992px )    
+//         div
+//             position: absolute
+//             top: 50%
+//             left: 50%
+//             transform: translate(-50%,-50%)
+//             h2
+//                 padding-bottom: 16px
+//                 padding-left: 16px
+//                 padding-right: 16px
+//                 border-bottom: 1px solid $Green
+//                 margin-left: -16px
+//                 padding-right: -16px
+//             p
+//                 padding-left: 16px
+//                 color: $coffee
+
+
+.fac8-p9
+    height: 80vh
+    overflow: hidden
+    img
+        border: 1px solid #999
+//workPage3
+.maxMap.po-center
+    @media screen and ( min-width: 1200px )
+        top: 40%
+        transform: translateY(-50%)
+.maxMap
+    position: relative
+    border: 1px solid #000
+    margin-right: auto
+    margin-left: auto
+    width: 100%
+    .ipadImg
+        text-align: left
+        // @media screen and ( min-width: 991px )
+        //     text-align: center
+        //     display: block
+        @media screen and ( min-width: 1200px )
+            text-align: center
+            display: block
+            
+    img
+            width: 100%
+    @media screen and ( min-width: 576px )
+        max-width: 540px
+    @media screen and ( min-width: 768px )
+        max-width: 720px
+    @media screen and ( min-width: 992px )
+        max-width: 960px
+        img
+            width: 700px
+    @media screen and ( min-width: 1200px )
+        max-width: 1140px
+        img
+            width: 700px
+    @media screen and ( min-width: 1400px )
+        max-width: 1320px
+        img
+            width: 960px
+    @media screen and ( min-width: 1550px )
+        max-width: 1470px
+        img
+            width: 1060px
+    @media screen and ( min-width: 1750px )
+        max-width: 1630px
+        img
+            width: 1160px
+.ipad1
+    position: absolute
+    width: 150px
+    vertical-align: top
+    //display: none
+    
+    h4
+        font-weight: 600
+        position: relative
+        // &::after
+        //     content: " "
+        //     position: absolute
+        //     top: 50%
+        //     transform: translateY(-50%)
+        //     width: 150px
+        //     background-color: red
+        //     height: 2px
+    p
+        font-size: 15px
+
+.ipad1_text1
+    
+    position: relative
+    
+    @media screen and ( min-width: 576px )
+       
+        h4::after
+            content: " "
+            top: 50%
+            transform: translateY(-50%)
+            width: 180px
+            background-color: red
+            height: 2px
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: absolute
+        top: 100px
+        left: 20px
+    @media screen and ( min-width: 1400px )
+        top: 150px
+        left: 20px
+        h4::after
+            width: 155px
+    @media screen and ( min-width: 1550px )
+        h4::after
+            width: 190px
+    @media screen and ( min-width: 1750px )
+        top: 150px
+        left: 40px
+        h4::after
+             width: 195px
+
+        
+    
+.ipad1_text2
+    
+    position: relative
+    
+    @media screen and ( min-width: 576px )
+        h4::after
+            content: " "
+            top: 50%
+            transform: translateY(-50%)
+            width: 360px
+            background-color: red
+            height: 2px
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: absolute
+        top: 235px
+        left: 20px
+    @media screen and ( min-width: 1400px )
+        top: 305px
+        left: 20px
+        h4::after
+            width: 400px
+    @media screen and ( min-width: 1550px )
+        h4::after
+            width: 450px
+    @media screen and ( min-width: 1750px )
+        top: 325px
+        left: 40px
+        h4::after
+            width: 480px
+
+.ipad1_text3
+    
+    position: relative
+    @media screen and ( min-width: 576px )
+        h4::before
+            content: " "
+            top: 50%
+            transform: translateY(-50%)
+            width: 70px
+            background-color: red
+            height: 2px
+            left: -70px
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: absolute
+        top: 90px
+        left: 950px
+    @media screen and ( min-width: 1400px )
+        top: 150px
+        left: 1150px
+    @media screen and ( min-width: 1550px )
+        left: 1300px
+        h4::before
+            width: 85px
+            left: -85px
+        
+    @media screen and ( min-width: 1750px )
+        top: 150px
+        left: 1420px
+        
+.ipad1_text4
+    
+    position: relative
+    @media screen and ( min-width: 576px )
+        h4::before
+            content: " "
+            top: 50%
+            transform: translateY(-50%)
+            width: 70px
+            background-color: red
+            height: 2px
+            left: -70px
+    @media screen and ( min-width: 1200px )
+        display: block
+        position: absolute
+        top: 220px
+        left: 950px
+    @media screen and ( min-width: 1400px )
+        top: 300px
+        left: 1150px
+    @media screen and ( min-width: 1550px )
+        left: 1300px
+        h4::before
+            width: 85px
+            left: -85px
+    @media screen and ( min-width: 1750px )
+        top: 320px
+        left: 1420px
+        
+        
+
+        
+            
+
+
+        

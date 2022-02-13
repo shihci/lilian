@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="always" name="referrer">
+<title>title</title>
+</head>
+<script>
+
+
+document.onkeydown=function(event){
+var e = event || window.event || arguments.callee.caller.arguments[0];
+var div = document.getElementById('container');
+var top = div.offsetTop;
+var left = div.offsetLeft;
+var moveNUM = 10;
+
+if(e){
+switch(e.keyCode){
+case 37://←
+div.style.left = left - moveNUM + "px";
+break;
+case 38://↑
+div.style.top = top - moveNUM + "px";
+break;
+case 39://→
+div.style.left = left + moveNUM + "px";
+break;
+case 40://↓
+div.style.top = top + moveNUM + "px";
+break;
+}
+}
+};
+</script>
+<style>
+html,body{
+height:100%;
+padding:0;
+margin:0;
+overflow:hidden
+}
+#container{
+position:absolute;
+top:40px;
+bottom:0;
+left:0;
+right:0;
+}
+</style>
+<body>
+<div id="bg">
+<img src="./test_img/map.png" width="auto" height="100%">
+</div>
+<div id="container">
+<img src="./test_img/objext.png" width="120px" height="160px">
+</div>
+</body>
+</html> 

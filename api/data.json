@@ -1,0 +1,187 @@
+[
+    {
+        "item": "素材圖庫",
+        "name": "freepik",
+        "subtitle": "AI,PSD,JPG等各種形式圖庫網",
+        "content": "2021年3月2日 — Freepik 是以「專業、可編修、自由分享」的概念為基礎，並且以免費圖庫(圖片)，在網際網路上分享並免費下載的方式獲得市場肯定。",
+        "url":"https://www.freepik.com/",
+        "pict_url": "rs_freepik.png"
+    },
+    {
+        "item": "素材圖庫",
+        "name": "Pexels",
+        "subtitle": "CCO圖庫網",
+        "content": "Pexels 最佳免費圖庫推薦，上萬張相片素材 CC0 授權可商用改作。",
+        "url":"https://www.pexels.com/",
+        "pict_url": "rs_pexels.jpg"
+    },
+    {
+        "item": "素材圖庫",
+        "name": "Pixabay",
+        "subtitle": "CCO圖庫網",
+        "content": "Pixabay提供極佳的圖片素材庫，可以免費使用的照片、向量圖和藝術插圖，並賦予CC0授權方式，包含商業用途可自由使用，無須署名。",
+        "url":"https://pixabay.com/",
+        "pict_url": "rs_pixabay.jpg"
+    },
+    {
+        "item": "素材網站",
+        "name": "Pngtree",
+        "subtitle": "AI,PSD,JPG等各種形式圖庫網",
+        "content": "提供平面設計圖片、背景圖、模板、PowerPoint版型、ICON等多種素材免費取用，免費用戶1天只能下載2個，高級會員可無限下載。",
+        "url":"https://zh.pngtree.com/",
+        "pict_url": "rs_pngtree.png"
+    },
+    {
+        "item": "素材圖庫",
+        "name": "ガーリー素材",
+        "subtitle": "插畫風格的素材網",
+        "content": "可以免費下載EPS、PNG、JPEG 的日式可愛插圖。",
+        "url":"https://girlysozai.com/",
+        "pict_url": "rs_girlysozai.jpeg"
+    },
+    {
+        "item": "素材圖庫",
+        "name": "BEIZ Graphics",
+        "subtitle": "背景素材圖庫",
+        "content": "BEIZ Graphics提供日本風景的圖片素材等，雖說個人和商業用途都可以免費下載，但在授權上還是有很多需要注意的地方，部分不可用於商業。",
+        "url":"https://www.beiz.jp/",
+        "pict_url": "rs_beizjp.png"
+    },
+    {
+        "item": "配色推薦",
+        "name": "Color Supply",
+        "subtitle": "設計大師的色彩搭配方案",
+        "content": "Color Supply是一款多功能的顏色選擇器，可以從色輪中選擇一種顏色，然後再選擇需要的配色樣式，例如互補色、三色組合等。",
+        "url":"https://colorsupplyyy.com/app",
+        "pict_url": "rs_colorsupply.png"
+    },
+    {
+        "item": "配色推薦",
+        "name": "Color Palettes",
+        "subtitle": "各式各樣的自然調色板",
+        "content": "提供暖色、冷色、對比等多種色板，由此可以找出配色靈感。",
+        "url":"https://colorpalettes.net/",
+        "pict_url": "rs_colorpalette.png"
+    },
+    {
+        "item": "配色推薦",
+        "name": "ImageHues",
+        "subtitle": "隨機的自然調色板",
+        "content": "它從Upslash 網站裡精選了一些攝影作品，提取了其中的配色，一鍵點擊就可以複製色號、get同款配色方案。",
+        "url":"https://imagehues.com/",
+        "pict_url": "rs_imageHue.png"
+    },
+    {
+        "item": "配色推薦",
+        "name": "色采",
+        "subtitle": "網頁、APP用靈感色卡",
+        "content": "一款寫給大家用的配色網站，無論是配色初學者，還是專業設計師都能通過應用內提供的多種配色方式，尋找到配色靈感，並輕松搭配出好色彩。",
+        "url":"https://colorcollect.cn/inspiration",
+        "pict_url": "rs_color.png"
+    },
+    {
+        "item": "配色推薦",
+        "name": "中國色(1)",
+        "subtitle": "中國傳統顏色手冊",
+        "content": "山寨自日本網站，CHINESE COLORS 主要是收錄中國傳統顏色，如果想找的是中國配色，或許可以從這裡獲得一些靈感。",
+        "url":"http://zhongguose.com/",
+        "pict_url": "rs_chinesecolor1.png"
+    },
+    {
+        "item": "配色推薦",
+        "name": "中國色(2)",
+        "subtitle": "中國傳統顏色手冊",
+        "content": "主要是收錄中國傳統顏色，如果想找的是中國配色，或許可以從這裡獲得一些靈感。",
+        "url":"https://colors.ichuantong.cn/",
+        "pict_url": "rs_chinesecolor2.png"
+    },
+    {
+        "item": "配色推薦",
+        "name": "日本傳統色",
+        "subtitle": "日本傳統顏色手冊",
+        "content": "主網站以收錄所謂日本傳統色系為主，前前後後共 250 種顏色，這些顏色也常被用於和服或其他日本傳統藝術和手工藝中。",
+        "url": "https://nipponcolors.com/",
+        "pict_url": "rs_nipponcolors.png"
+    },
+    {
+        "item": "字體設計",
+        "name": "Dafont",
+        "subtitle": "多樣化字體類型",
+        "content": "DaFont是Internet上最大和最多樣化的字體庫，有區分個人免費與商用免費，使用前務必注意規範。",
+        "url": "https://www.dafont.com/",
+        "pict_url": "rs_dafont.png"
+    },
+    {
+        "item": "字體設計",
+        "name": "Google Fonts",
+        "subtitle": "可商用，適用於webfonts",
+        "content": "Google Noto 開源免費字型下載，完美支援 800 種語言、11 萬個字元無亂碼。",
+        "url": "https://www.dafont.com/",
+        "pict_url": "rs_googleFonts .png"
+    },
+    {
+        "item": "字體設計",
+        "name": "Adobe fonts",
+        "subtitle": "Adobe推出的字體",
+        "content": "前身為Typekit現更名為Adobe Fonts，同時還解除了流量與域名的限制,一樣可用於商業的字體字體",
+        "url": "https://fonts.adobe.com/fonts",
+        "pict_url": "rs_adobeFonts.png"
+    },
+    {
+        "item": "字體設計",
+        "name": "貓啃網",
+        "subtitle": "主打免費商用字體網",
+        "content": "貓啃網致力於為廣大設計師提供最新最全且免費的字體，支持商用，無版權的免費字體網。",
+        "url": "https://www.maoken.com/",
+        "pict_url": "rs_maoken.png"
+    },
+    {
+        "item": "字體設計",
+        "name": "JustFonts",
+        "subtitle": "jf open粉圓體",
+        "content": "金萱字型成功後，為回饋社會所推出的免費開源字體，可自用商用。",
+        "url": "https://www.maoken.com/",
+        "pict_url": "rs_justfont.jpeg"
+    },
+    {
+        "item": "字體設計",
+        "name": "100font",
+        "subtitle": "主打免費商用字體網",
+        "content": "一個專門免費收集商用字體的網站。",
+        "url": "https://www.100font.com/",
+        "pict_url": "rs_100font.png"
+    },
+    {
+        "item": "icon設計",
+        "name": "icooon-mono",
+        "subtitle": "主打免費商用字體網",
+        "content": "ICOOON MONO 超過6000 個免費圖示下載，提供格式為AI,svg,png。",
+        "url": "https://icooon-mono.com/",
+        "pict_url": "rs_icoonMono.png"
+    },
+    {
+        "item": "icon設計",
+        "name": "Google icons",
+        "subtitle": "Google Material icons",
+        "content": "Material icons 裡的 Icon 都是平面化設計，以簡單的色塊、線條為主，非常簡約，可以依照自己想要的風格選擇。",
+        "url": "https://fonts.google.com/icons?selected=Material+Icons:check",
+        "pict_url": "rs_googleicons.png"
+    },
+    {
+        "item": "icon設計",
+        "name": "Heroicons",
+        "subtitle": "SVG圖標",
+        "content": "漂亮的手工製作的SVG圖標，由Tailwind CSS的製造商提供，可直接嵌入網頁中使用，並且利用CSS設定圖示的大小與顏色。",
+        "url": "https://heroicons.com/",
+        "pict_url": "rs_heroicons.png"
+    },
+    {
+        "item": "icon設計",
+        "name": "animated-icons",
+        "subtitle": "具有動畫的icon",
+        "content": "Animated icons 是一個專門提供動畫圖標Icons 的免費資源網站，它是由Icons8 所提供的一個專門提供免費動畫圖示的資源庫。",
+        "url": "https://icons8.com/animated-icons",
+        "pict_url": "rs_animatedIcons.png"
+    }
+    
+]
