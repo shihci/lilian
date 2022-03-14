@@ -50,17 +50,15 @@ window.onload=function(){
     const closed =document.getElementById("closed")
     const menu=document.getElementById("menu_area");
 
-    if(menuBtn){
-        menuBtn.addEventListener("click",()=>{
-            menu.style.bottom="0";
-            menu.style.height="100%";
+    
+    menuBtn.addEventListener("click",()=>{
+        menu.style.bottom="0";
+        menu.style.height="100%";
+    });
+
+        closed.addEventListener("click",()=>{
+        menu.style.bottom="100%";  
         });
-    
-            closed.addEventListener("click",()=>{
-            menu.style.bottom="100%";  
-            });
-    }
-    
 }
     
 

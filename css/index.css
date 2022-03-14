@@ -54,10 +54,6 @@ p {
   z-index: 2;
 }
 
-.menu:hover, .closed:hover {
-  background-color: blue;
-}
-
 .menu div, .closed div {
   display: -webkit-box;
   display: -ms-flexbox;
