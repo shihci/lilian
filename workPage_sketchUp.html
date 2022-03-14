@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SketcchUp-3D設計/作品集</title>
+	<link href="css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"">
+    <link rel=" stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+
+	<div id="headerBox" class="headerBox">
+		<div class="menu">
+			<div id="menu" class="menuBtn"> <img src="img/menu-app.svg" alt=""></div>
+		</div>
+		
+		<div class="titleQH ">CHEN QIAN HUI</div>
+	</div>
+	<!--nav-->
+	<div id="nav"></div>
+	
+	<div class="main_page mt-header">
+		
+		<div class="container">
+			<div class="row blockArea">
+				<div class="col-12">
+					<div class="title_lgbg m-0
+					mb-3">
+						<h1>SketchUp-3D設計</h1>
+					</div>
+					
+				</div>
+				<div class="col-12">
+					<div id="tab_menu" class="tab_menu">
+						<div id="tab1" class="active" onclick="tabFn(1)">卡機盒1</div>
+						<div id="tab2" onclick="tabFn(2)">卡機盒2</div>
+						<div id="tab3" onclick="tabFn(3)">板鐵架</div>
+					</div>
+					<div id="tabBox">
+						<div id="tab_box1" class="active">
+							<h2>卡機盒1</h2>
+							<h3>SketchUp-Model</h3>
+							<iframe src="https://3dwarehouse.sketchup.com/embed/fd958b47-4a30-48cc-97d8-ff8816a63738" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="500" allowfullscreen></iframe>
+							<h3 class="pt-4">平面視圖</h3>
+							<img src="img/web_sketchup/AcrylicBoxv1.png" width="100%" alt="">
+						</div>
+						<div id="tab_box2" class="tab_box">
+							<h2>卡機盒2</h2>
+							<h3>SketchUp-Model</h3>
+							<iframe src="https://3dwarehouse.sketchup.com/embed/bf0767b2-1ef8-42ab-8506-daa28631848c" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="500" allowfullscreen></iframe>
+
+							<h3 class="pt-4">平面視圖</h3>
+							<img src="img/web_sketchup/AcrylicBoxv2.png" width="100%" alt="">
+
+						</div>
+						<div id="tab_box3" class="tab_box">
+							<h2>板鐵架</h2>
+							<h3>SketchUp-Model</h3>
+							<iframe src="https://3dwarehouse.sketchup.com/embed/26e8b3ab-3b1b-4299-9d36-da8cdba600ea" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="500" allowfullscreen></iframe>
+							<h3 class="pt-4">平面視圖</h3>
+							<img src="img/web_sketchup/ironFrame.png" width="100%" alt="">
+						</div>
+						<!-- <iframe src="https://3dwarehouse.sketchup.com/embed/fd958b47-4a30-48cc-97d8-ff8816a63738" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="326" allowfullscreen></iframe> -->
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+	let tabgroup=document.getElementById("tab_menu").children;
+	let tabBox=document.getElementById("tabBox").children;
+	
+	function tabFn(v1){
+		for(let i=0;i<tabgroup.length;i++){
+		if(tabgroup[i].classList.contains("active")){
+			tabgroup[i].classList.remove("active")
+			 tabBox[i].classList.remove("active")
+		}
+	}
+
+		document.getElementById("tab"+v1).classList.add("active");
+		document.getElementById("tab_box"+v1).classList.add("active")
+	
+	}
+</script>
+
+
+</html>

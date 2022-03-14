@@ -13,56 +13,19 @@
 </head>
 <body>
     
-    <div class="menu">
-        <div id="menu"> <img src="img/menu-app.svg" alt=""></div>
-    </div>
+    <div id="headerBox" class="headerBox">
+		<div class="menu">
+			<div id="menu" class="menuBtn"> <img src="img/menu-app.svg" alt=""></div>
+		</div>
+		
+		<div class="titleQH ">CHEN QIAN HUI</div>
+	</div>
  
 <!--nav-->
-    <div id="menu_area" class="menu_area">
-        <div class="closed">
-            <div id="closed"> <img src="img/x-lg.svg" alt=""></div>
-        </div>
-        <div class="menu_textArea">
-        
-            <ul class="flex_ul1">
-                <li class="flex_li1">
-                    <a href="index.html">首頁<div>Home</div>  </a>
-                </li>
-                <li class="flex_li1">
-                    <a href="about.html">關於我<div>About me</div></a>
-                </li>
-                <li class="flex_li1">
-                    <a href="work.html">實機展示<div>Works</div></a>
-                    <div class="d-inline-block text-center">
-                        <ul class="d-none d-lg-block text-start">
-                            <li>- 網頁設計</li>
-                            <li>- UI設計</li>
-                            <li>- 平面設計</li>
-                            <li>- 3D設計</li>
-                            <li>- 影片設計</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="flex_li1">
-                    <a href="resource.html".html">資源分享<div>Resource</div></a>
-                    <div class="d-inline-block text-center">
-                        <ul class="text-start">
-                            <li>- 素材圖庫</li>
-                            <li>- 配色推薦</li>
-                            <li>- 字體設計</li>
-                            <li>- icon設計</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="flex_li1">
-                    <a href="">聯絡資訊<div>Contact</div></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <div id="nav"></div>
 
-    <div class="main_page">
-        <div class="text-center title_text py-4">CHEN QIAN HUI</div>
+    <div class="main_page mt-header">
+       
         <div class="container">
             <div class="row py-4">
                 <div class="col-12 col-md-3">
@@ -83,8 +46,8 @@
                 
             </div>
             <div id="workContent" class="row workBox g-4">
-                <div class="col-6 col-md-4 col-lg-3 col-2_10">
-                    <div class="work_item" onclick="window.location.href='workPage1.html';return false">
+                <!-- <div class="col-6 col-md-4 col-lg-3 col-2_10">
+                    <div class="work_item" onclick="window.location.href='workPage_Ypro.html';return false">
                         <img src="img/pro_test/pro_sm_1.png" alt="">
                         <div class="hover_inform" >
                             <div class="work_text">
@@ -129,7 +92,7 @@
                     <div class="work_item">
                         <img src="img/pro_test/pro_sm_8.png" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -150,6 +113,7 @@ for(var i = 0; i < els.length; i++)
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
-<script src="js/index.js"></script>
+
 <script src="js/axiosList.js"></script>
+<script src="js/index.js"></script>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>關於我</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-icons.css">
@@ -13,46 +13,71 @@
 </head>
 <body>
     
-    <div class="menu">
-        <div id="menu"> <img src="img/menu-app.svg" alt=""></div>
-        
-    </div>
+    <div id="headerBox" class="headerBox">
+		<div class="menu">
+			<div id="menu" class="menuBtn"> <img src="img/menu-app.svg" alt=""></div>
+		</div>
+		
+		<div class="titleQH ">CHEN QIAN HUI</div>
+	</div>
  
 <!--nav-->
-    <div id="menu_area" class="menu_area">
-        <div class="closed">
-            <div id="closed"> <img src="img/x-lg.svg" alt=""></div>
-        </div>
-        <div class="menu_textArea">
-            <ul class="flex_ul1">
-                <li class="flex_li1">
-                    <a href="index.html">首頁<div>Home</div>  </a>
-                </li>
-                <li class="flex_li1">
-                    <a href="about.html">關於英寶<div>About Us</div></a>
-                </li>
-                <li class="flex_li1">
-                    <a href="work.html">實機展示<div>Works</div></a>
-                    <ul>
-                        <li>- 3D 產品</li>
-                        <li>- 3D 產品</li>
-                        <li>- 3D 產品</li>
-                    </ul>
-                </li>
-                <li class="flex_li1">
-                    <a href="resource.html">資源分享<div>Resource</div></a>
-                </li>
-                <li class="flex_li1">
-                    <a href="">聯絡資訊<div>Contact</div></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="poa_header title_text about_active text-center py-4">CHEN QIAN HUI</div>
+    <div id="nav"></div>
+    
     <div class="main_page">
+        <section class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 pt-5">
+                        <h2 class="title_cn">關於我</h2>
+                        <h3 class="title_en">-About ME</h3>
+
+                        <div class="row py-3">
+                            <div  class="about_td1">
+                                <h4 class="title_sm">聯絡資訊</h4>
+                            </div>
+                            <div  class="about_td2">
+                                <p>電話:0972802876</p>
+                                <p>mail:an9991an@gmail.com</p>
+                                <p>facebook:</p>
+                            </div>
+                            <div class="about_td1">
+                                <h4 class="title_sm">工作經驗</h4>
+                            </div>
+                            <div class="about_td2">
+                                <p>現代工程資訊社</p>
+                                <p>短期工讀生</p>
+                                <p>2020/05-2020/06</p>
+                                <p>英寶科技股份有限公司</p>
+                                <p>前端美工工程師</p>
+                                <p>2020/10/07-至今</p>
+                            </div>
+                        
+                            <div class="about_td1">
+                                <h4 class="title_sm">學歷</h4>
+                            </div>
+                            <div class="about_td2">
+                                <p>朝陽科技大學</p>
+                                <p>資訊管理系數位多媒體組</p>
+                                <p>2013/05-2016/06</p>
+                                <p>國立大甲高級中學</p>
+                                <p>廣告設計系</p>
+                                <p>2016/09-2020/06</p>
+                            </div>
+
+                        
+                        </div>
+                    </div> 
+                    <div class="col-12 col-md-6 pt-5 about_qhchen mb-4">
+                        <img src="img/qhchen/qhchenAbout.jpg" width="100%" alt="">
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
         
-        <section class="aboutme1">
-            <!-- <div class="text-center title_text py-4">CHEN QIAN HUI</div> -->
+        <!-- <section class="aboutme1">
+            
             <div class="about_photo"><img src="img/about1.png" width="100%" alt=""></div>
         
             
@@ -108,12 +133,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <div class="bgc_darkgreen">
             <div class="container py-4 py-lg-5">
                 <div class="row">
                     <div class="col-12 text-white">
-                        <h3 class="title_cn text-white">英寶科技｜Ying Pao</h3>
+                        <h3 class="title_cn text-white">陳芊卉 | Chen Qian Hui</h3>
                         <p>
                             我是陳芊卉，我的個性比較積極認真，興趣是閱讀書籍、看影片，出生在台中市大甲區，畢業於朝陽科大技學資訊管理系數位多媒體組，現在在英寶擔任一位網頁前端美工。<br/>
                             我在大學時期就善於2D與3Ｄ設計相關，程式涉略，在出社會後，因為工作關係，也開始大量接觸程式，最初是到hahow上買網頁設計最入門的學習，在學習過程中發現自己還有很多不足的地方，後來又經友人介紹在hiskio、udemy等學習平台針對JS、特效、框架等課程購買，加強自己實力，目前正在學習vue框架入門中。<br/>
@@ -135,32 +160,52 @@
                 <h4 class="title_sm">程式碼</h4>
                 <div class="m-3"><img src="test_img/skills1.svg" width="60%" alt=""></div>
                 <h5 class="title_skill">HTML, CSS, Javascript, Vue</h5>
-                <p class="text-start">
-                    Html,css:前端必備知識，css部分不敢說到精通，但大部分畫面都能刻出來。<br/>
-                    Javascript:基礎的知識具備，在運用上會比較需要時間消化才能做出想要的功能。<br/>
-                    Vue:會使用簡單的事件綁定、跟資料呈現，目前正在學習中
-                </p>
+                <div class="text-start skill_text">
+                    <h6> Html,css</h6>
+                    <p>前端必備知識，css部分不敢說到精通，但大部分畫面都能刻出來。</p>
+                   <h6>Javascript</h6>
+                   <p>具備基礎的知識，也可以做出簡單的功能運用，但比較需要時間消化才能做出想要的功能。</p> 
+                    <h6>Vue</h6>
+                    <p>目前只會使用簡單的事件綁定、跟資料呈現，正在學習中。</p>
+                </div>
             </div>
             <div class="col-6 col-769-3 text-center">
                 <h4 class="title_sm">平面設計</h4>
                 <div class="m-3"><img src="test_img/skills2.svg" width="60%" alt=""></div>
                 <h5 class="title_skill">Adobe cc Illustrator, Photoshop,XD</h5>
-                <p class="text-start">AI:最常用的軟體之一，主要用來產品、海報排版、調色<br/>
-                    PS:主要用來修圖、做特效<br/>
-                    XD:在畢業後新接觸的軟體，在網頁排版上更利於用AI排版</p>
+                <div class="text-start skill_text">
+                    <h6>Adobe cc Illustrator</h6>
+                    <p>最常用的軟體之一，主要用來製作產品文宣、海報排版、調色。</p>
+                    <h6>Adobe cc Photoshop</h6>
+                    <p>主要用來修圖、做特效</p>
+                    <h6>Adobe cc XD</h6>
+                    <p> 在畢業後新接觸的軟體，在網頁排版上更利於用AI排版</p>
+                   </div>
             </div>
             
             <div class="col-6 col-769-3 text-center">
                 <h4 class="title_sm">3Ｄ設計</h4>
                 <div class="m-3"><img src="test_img/skills3.svg" width="60%" alt=""></div>
                 <h5 class="title_skill">3Ds MAX, SketchUp, Revit</h5>
-                <p class="text-start">SketchUp:有時候公司需要我畫出3D的產品來，為求方便快速，我會選擇此工具，能精準描繪出產品的三視圖、３Ｄ圖提供給廠商生產產品。</p>
-            </div>
+                <div class="text-start skill_text">
+                    <h6>3Ds MAX</h6>
+                    <p>3Ｄ善於建模，3Ds MAX主要用於角色人物、或建築都會用到該軟體</p>
+                    <h6>SketchUp</h6>
+                    <p>主要用於簡單的工業產品，工作時需要畫出產品圖，並將詳細資訊交由廠商製作，比如放卡機的卡機盒，為求方便快速，我會選擇此工具，能精準描繪出產品的三視圖、３Ｄ圖提供給廠商生產產品。</p>
+                    <h6>Revit</h6>
+                    <p>因應公司需求而學會利用revit軟體製作所需要的族群。</p>
+                </div>
+            </div> 
             <div class="col-6 col-769-3 text-center">
                 <h4 class="title_sm">影片剪輯</h4>
                 <div class="m-3"><img src="test_img/skills4.svg" width="60%" alt=""></div>
                 <h5 class="title_skill">Adobe AfterEffects</h5>
-            </div> 
+                <div class="text-start skill_text">
+                    <h6>AE</h6>
+                    <p>剪接或使用特效於影片上會用到該工具，製作lottie檔案時也會需要用到它</p>
+                </div>
+            </div>
+            
             
         </div>
     </div>
@@ -178,5 +223,6 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 <script src="js/index.js"></script>
 </html>

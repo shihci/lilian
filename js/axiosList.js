@@ -1,4 +1,4 @@
-window.onload=function(){
+
     axios.get("./api/WorkData.json")
     .then(function(res){
         let allWs=res.data;
@@ -58,13 +58,12 @@ window.onload=function(){
             console.log(e.target.getAttribute("name"));
                     
             console.log(e.target);
-            })
-                    
+            })         
             
         }
 
     
-    
+
          ResourceItems(alls);
  
     })
@@ -82,8 +81,8 @@ window.onload=function(){
         let Work="";
         resArr.forEach((item) => { 
             Work+=`
-            <div class="col-6 col-md-4 col-lg-3 col-2_10">
-                    <div class="work_item" onclick="window.location.href='workPage1.html';return false">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-2_10">
+                    <div class="work_item" onclick="window.location.href='${item.webUrl}';return false">
                         <img src="img/work_pict/${item.pict_url}" alt="">
                         <div class="hover_inform" >
                             <div class="work_text">
@@ -116,7 +115,7 @@ window.onload=function(){
         let resource="";
         resArr.forEach((item) => { 
             resource+=`
-            <div class="col-6 col-md-4 col-lg-3 col-2_10">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-2_10">
                     <div class="resource_item" onclick="window.open('${item.url}')";return false">
                         <img src="img/rs_pict/${item.pict_url}" alt="">
                         <div class="hover_resource" >
@@ -132,4 +131,3 @@ window.onload=function(){
         });
         resourceContent.innerHTML=resource;
     }
-}

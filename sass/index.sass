@@ -8,7 +8,18 @@ $darkYellow: #FFB336
 $middelGray: #555555
 $darkBlue: #1C1C80
 $Blue: #54C3F1
-    
+$jsun_blue: #205DAE
+$jsun_yellow: #F39921
+
+$font-family1: 'Noto Serif TC', "微軟正黑體", Arial, serif
+$larger-title-xl: 28px
+$larger-title: 24px
+$title-size-xl: 24px
+$title-size: 20px
+$subtitle-size-xl: 18px
+$subtitle-size: 17px
+$context-size-xl: 16px
+$context-size: 15px
 *
     //border: 1px solid #000
     box-sizing: border-box 
@@ -97,7 +108,7 @@ p
     display: none
 .index_title, .index_p1
     vertical-align: top
-    font-family: 'Noto Serif TC', serif
+    font-family: $font-family1
     font-weight: 600
 
 .index_title
@@ -106,6 +117,13 @@ p
     position: relative
     height: 100%
     background-color: #fff
+.index_me
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    opacity: 1
+    transition: opacity 1s
 .index_img
     position: absolute
     top: 50%
@@ -157,7 +175,7 @@ p
     vertical-align: top
    
 .menu_area
-    position: absolute
+    position: fixed
     width: 100%
     bottom: 100% //100
     // height: 0% //0
@@ -165,7 +183,7 @@ p
     right: 0
     background-color: rgba(241,244,242,0.9)
     transition: 0.8s ease
-    z-index: 2
+    z-index: 20
 .menu_ul1
     position: relative
     top: 40%
@@ -181,7 +199,7 @@ p
     float: left
     width: 20%
     & a
-        font-family: 'Noto Serif TC', serif
+        font-family: $font-family1
         font-size: 20px
         color: $darkGreen
         font-weight: 600
@@ -212,10 +230,11 @@ p
 .flex_li1
     flex: 1
     margin-bottom: 0.5rem
+    cursor: pointer
     @media screen and ( min-width: 768px )
          margin-bottom: 0
     & a
-        font-family: 'Noto Serif TC', serif
+        font-family: $font-family1
         font-size: 15px
         color: $darkGreen
         font-weight: 600
@@ -261,7 +280,7 @@ p
 
 
 
-//body
+//body delete title-text
 .title_text
     font-size: 14px
     color: $Green
@@ -272,8 +291,8 @@ p
         background-clip: text
         -webkit-background-clip: text
         color: transparent
-    .title_text.has_active2
-        color: white
+.title_text.has_active2
+    color: white
 
     //color: $Green
    
@@ -299,63 +318,24 @@ p
     overflow: hidden
     @media screen and (min-width: 1025px)
          height: 100vh
+
 .about_td1
-    -ms-flex: 0 0 28%
-    flex: 0 0 28%
-    max-width: 28%
-    @media screen and (min-width: 450px)
-        -ms-flex: 0 0 24%
-        flex: 0 0 24%
-        max-width: 24%
-    @media screen and (min-width: 500px)
-        -ms-flex: 0 0 18%
-        flex: 0 0 18%
-        max-width: 18%
-    @media screen and (min-width: 992px)
-        -ms-flex: 0 0 26%
-        flex: 0 0 26%
-        max-width: 26%
-    @media screen and (min-width: 992px)
-        -ms-flex: 0 0 20%
-        flex: 0 0 20%
-        max-width: 20%
-    @media screen and (min-width: 1200px)
-        -ms-flex: 0 0 16%
-        flex: 0 0 16%
-        max-width: 16%
-    @media screen and (min-width: 1400px)
-        -ms-flex: 0 0 14%
-        flex: 0 0 14%
-        max-width: 14%
+    flex: 0 0 auto
+    width: 100px
 .about_td2
-    -ms-flex: 0 0 70%
-    flex: 0 0 70%
-    max-width: 70%
-    @media screen and (min-width: 992px)
-        -ms-flex: 0 0 74%
-        flex: 0 0 74%
-        max-width: 74%
-    @media screen and (min-width: 992px)
-        -ms-flex: 0 0 80%
-        flex: 0 0 80%
-        max-width: 80%
-    @media screen and (min-width: 1200px)
-        -ms-flex: 0 0 84%
-        flex: 0 0 84%
-        max-width: 84%
-    @media screen and (min-width: 1400px)
-        -ms-flex: 0 0 86%
-        flex: 0 0 86%
-        max-width: 86%
+    flex: 0 0 auto
+    width: calc( 100% - 100px )
+.about_qhchen img
+    width: 350px
 .title_cn
     font-size: 21px
-    font-family: 'Noto Serif TC', serif
+    font-family: $font-family1
     color: $lightCoffee
     font-weight: 600
     
 .title_en
     font-size: 14px
-    font-family: 'Noto Serif TC', serif
+    font-family: $font-family1
     color: $coffee
     font-weight: 600
     margin-top: -8px
@@ -366,14 +346,14 @@ p
     margin-bottom: 3rem 
 .title_sm
     font-size: 16px
-    font-family: 'Noto Serif TC', serif
+    font-family: $font-family1
     color: $Green
     font-weight: 600
 .about_img1
     width: 80%
 
         
-@media screen and ( min-width: 768px )
+@media screen and ( min-width: 992px )
     .col-769-3
         -ms-flex: 0 0 25%
         flex: 0 0 25%
@@ -392,9 +372,17 @@ p
 
 .title_skill
     font-size: 15px
-    font-family: 'Noto Serif TC', serif
+    font-family: $font-family1
     color: $coffee
     font-weight: 600
+.skill_text
+    h6 
+        font-size: $subtitle-size
+        background-color: $Green
+        color: #fff
+        border-radius: 14px
+        padding: 0px 10px
+        margin-top: 16px
 
 //works
 @media screen and ( min-width: 1200px )
@@ -403,7 +391,10 @@ p
         width: 20%
     
 .work_nav,.resource_nav
-     text-align: right
+    text-align: left
+    @media screen and ( min-width:  576px)
+        text-align: right
+         
 .work_nav div,.resource_nav div ,.work_nav div
     display: inline-block
     padding: 2px 12px
@@ -431,7 +422,8 @@ p
         background-color: rgba(5,5,5,0.0) 
 .work_item:hover .hover_inform
     height: 100%
-    background-color: rgba(5,5,5,0.5) 
+    background-color: rgba(5,5,5,0.5)
+
 .work_text
     color: white
     font-size: 14px
@@ -445,9 +437,11 @@ p
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
     cursor: pointer
     position: relative
-    aspect-ratio: 16 / 11   
+    aspect-ratio: 16 / 11 
+    overflow: hidden 
     & img
         width: 100%
+        
 //page
 .main_page.page_Swiper
     height: 100%
@@ -532,33 +526,22 @@ p
     width: 100%
     height: 100%
 .swiper-slide
-    border: 1px solid #000
-    // text-align: center
+    border: 0px solid #000
     font-size: 15px
-    /* Center slide text vertically */
-    // display: flex
-    // -webkit-box-pack: center
-    // -ms-flex-pack: center
-    padding-top: 80px
+    padding-top: 70px
     padding-left: 16px
     padding-right: 16px
     padding-bottom: 16px
     overflow: hidden
-    // justify-content: center
-    // -webkit-box-align: center
-    // -ms-flex-align: center
-    // align-items: center
-// .swiper-slide img
-//     display: block
-//     width: 90%
-//     // height: 100%
-//     object-fit: cover
 
 
 //mywork_css-work1
 
 .web-content
-    min-height: calc( 60vh - 20px )
+    padding-bottom: 16px
+    @media screen and ( min-width: 576px ) 
+        padding-bottom: 0px
+        min-height: calc( 60vh - 20px )
     .textWhite
         @media screen and ( min-width: 768px ) 
             color: #fff!important
@@ -576,7 +559,7 @@ p
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2)
 
 .work_title
-    font-family: 'Noto Serif TC', serif
+    font-family: $font-family1
     font-size: 20px
     font-weight: 600
     padding-bottom: 8px
@@ -591,6 +574,10 @@ p
 
 .work-row
     --bs-gutter-x: 2rem
+    @media screen and ( min-width: 1200px )
+        align-items: center
+.vh-100
+    height: 100vh
 .work_one_title
     text-align: center
     font-family: Arial, serif
@@ -616,14 +603,14 @@ p
         
 .work_one_p
     font-size: 20px
-    font-family: 'Noto Serif TC', "微軟正黑體", Arial, serif
+    font-family: $font-family1
     font-weight: 600
     text-align: center
     color: $darkGreen
     margin-bottom: 0
 .work_one_p_en
     text-align: center
-    font-family: 'Noto Serif TC', "微軟正黑體", Arial, serif
+    font-family: $font-family1
     font-size: 14px
     color: $darkGreen
     margin-bottom: 0
@@ -657,7 +644,7 @@ p
     background-color: #fff
     border-radius: 25px
     font-size: 15px
-    font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+    font-family: $font-family1
     padding: 6px 45px
     
     &:hover
@@ -666,14 +653,13 @@ p
     &.ypro
         background-color: $darkBlue
         color: white
-        
         @media screen and ( min-width: 768px )
             background-color: white
             color: $darkBlue
             
 
 .swiper-slide.bg_ypro
-    border: 1px solid #000
+    border: 0px solid #000
     //background: linear-gradient(360deg, $darkBlue 50%,transparent 50%)
     @media screen and ( min-width:  768px)
         background: linear-gradient(90deg, $darkBlue 50%,transparent 50%)
@@ -718,7 +704,8 @@ p
         //border-radius: 20px
         //overflow: hidden
     >div>div
-        border: 0px solid #000
+        
+        border: 1px solid #fff
         background-color: #fff
         display: flex
         align-items: center
@@ -740,12 +727,12 @@ p
                 background-color: darken($lightGreen, 5%)
                 >div:nth-child(1)
                     background-color: #fff
-                
             &:nth-child(4)
                 border-bottom-right-radius: 10px
                 >div:nth-child(1)
                     background-color: darken($lightGreen, 0%)
-
+        @media screen and ( min-width: 1024px ) and (max-height: 650px)
+            padding: 2rem 2rem
         >div:nth-child(1)
             flex: 0 0 auto
             position: relative
@@ -776,8 +763,55 @@ p
                 @media screen and ( min-width: 400px )
                     font-size: 15px
 
+//new workPage_system
+.system-context
+    text-align: center
+    h1
+        font-size: $larger-title
+        font-family: $font-family1
+        color: $Green
+        font-weight: 600
+        @media screen and ( min-width: 992px )
+            font-size: $larger-title-xl
+            
+    p
+        font-size: $context-size
+        @media screen and ( min-width: 992px )
+            font-size: $context-size-xl
+        
+.system-lottie
+    height: 500px
+.system-block1
+    background-color: $Green
+    color: #fff
+.system-block2
+    h1
+        color: $Green
+.system-block3
+    background: -moz-linear-gradient(top, $Green 0%, $Green 50%, transparent 50%, transparent 100%)
+    background: -webkit-linear-gradient(top, $Green 0%,$Green 50%,transparent 50%,transparent 100%)
+    color: #fff
+.system-block1,.system-block2,.system-block3
+    h1
+        font-size: $title-size
+        font-weight: 600
+        font-family: $font-family1
+        @media screen and ( min-width: 992px )
+            font-size: $title-size-xl
+            
+            
+.system-grid
+    text-align: center
+    div
+        margin-bottom: 16px
+    h3
+        text-align: left
+        font-size: $subtitle-size
+        @media screen and ( min-width: 992px )
+            font-size: $subtitle-size-xl
 
-
+    img
+        width: 100%
 //系統網頁設計 workpage5
 .swiper-slide.bg_halfGreen
     border: 1px solid #000
@@ -789,7 +823,7 @@ p
     height: 85vh
 .system-title
     font-size: 21px
-    font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+    font-family: $font-family1
     color: $Green
     @media screen and ( min-width:  991px)
         position: absolute
@@ -802,12 +836,12 @@ p
         font-size: 36px
 .system-subtitle
     font-size: 18px
-    font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+    font-family: $font-family1
     color: $Green
     @media screen and ( min-width: 991px )
         font-size: 24px
     span
-        font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+        font-family: $font-family1
 .system-memo
     position: absolute
     bottom: 0
@@ -990,7 +1024,7 @@ p
         align-self: flex-start
 .fac8PT-title
     font-size: 36px
-    font-family: 'Noto Serif TC',"微軟正黑體",Arial, serif
+    font-family: $font-family1
     color: $Green
     font-weight: 600
     @media screen and (max-width: 640px)
@@ -1052,25 +1086,6 @@ p
     p
         
         color: $coffee
-// .fac8-p8
-//     position: relative
-//     @media screen and ( min-width: 992px )    
-//         div
-//             position: absolute
-//             top: 50%
-//             left: 50%
-//             transform: translate(-50%,-50%)
-//             h2
-//                 padding-bottom: 16px
-//                 padding-left: 16px
-//                 padding-right: 16px
-//                 border-bottom: 1px solid $Green
-//                 margin-left: -16px
-//                 padding-right: -16px
-//             p
-//                 padding-left: 16px
-//                 color: $coffee
-
 
 .fac8-p9
     height: 80vh
@@ -1144,9 +1159,7 @@ p
         font-size: 15px
 
 .ipad1_text1
-    
     position: relative
-    
     @media screen and ( min-width: 576px )
        
         h4::after
@@ -1178,9 +1191,7 @@ p
         
     
 .ipad1_text2
-    
     position: relative
-    
     @media screen and ( min-width: 576px )
         h4::after
             content: " "
@@ -1209,7 +1220,6 @@ p
             width: 480px
 
 .ipad1_text3
-    
     position: relative
     @media screen and ( min-width: 576px )
         h4::before
@@ -1239,7 +1249,6 @@ p
         left: 1420px
         
 .ipad1_text4
-    
     position: relative
     @media screen and ( min-width: 576px )
         h4::before
@@ -1266,11 +1275,366 @@ p
     @media screen and ( min-width: 1750px )
         top: 320px
         left: 1420px
-        
-        
+//page_Jsun
 
-        
+.swiper-slide.bg_jsun
+    @media screen and (min-width: 768px)
+        // background: -webkit-gradient(linear, left top, right top, color-stop(50%, #205DAE), color-stop(50%, transparent))
+        // background: linear-gradient(90deg, #205DAE 50%, transparent 50%)
+        background-color: $jsun_blue
+
+.swiper-slide.bg_jsun2
+    background-color: $jsun_blue
+.work_one_title.C_jsun, .work_one_p.C_jsun
+    color: $jsun_blue
+.work_one_title.C_jsun span, .work_one_p_en.C_jsun
+    color: $jsun_yellow
+.webP2Img.jsun
+    left: 30%
+.btnWeb.jsun
+    background-color: $jsun_blue
+    color: #fff
+    @media screen and ( min-width: 768px )
+        background-color: #fff
+        color: $jsun_blue
+.sw_jsun1
+    background-color: $jsun_blue
+    border: 1px solid #fff
+.sw_jsun2
+    background-color: #fff
+    border: 1px solid $jsun_blue
+.sw_jsun3    
+    background-color: $jsun_yellow
+    border: 1px solid #fff
+.web-content .jsun_titleColor
+    color: $jsun_blue!important
+    @media screen and ( min-width: 768px )
+            color: #fff!important
+
+//news-ypro 
+
+.cisLeft
+    position: relative
+    transition: 0.8s
+    padding: 16px
+    @media screen and ( min-width: 992px )
+        border: 2px solid $Green
+        overflow-Y: scroll
+        padding: 16px
+        position: fixed
+        width: 370px
+        height: 84%
+        top: 86px //70+16px
+    @media screen and ( min-width: 1200px )
+        width: 430px
+    @media screen and ( min-width: 1440px )
+        width: 480px
+    @media screen and ( min-width: 1920px )
+        width: 500px
+    &::-webkit-scrollbar
+        width: 8px
+        background-color: transparent
+    &::-webkit-scrollbar-thumb
+        background: $Green
+        border-radius: 10px
+    > *:not(.web_comBg1,.web_comBg2)
+        position: relative
+        z-index: 2
+    .title_lgbg
+        background-color: $Green
+        display: inline-block
+        position: relative
+        padding: 6px
+        margin-bottom: 16px
+        // margin-left: -16px
+        @media screen and ( min-width: 992px )
+            margin-bottom: 0
+            top: -16px
+            left: -16px
+        h1
+            font-size: $larger-title
+            color: #fff
+            font-family: $font-family1
+            font-weight: 600
+            border: 1px solid #fff
+            padding: 10px 16px
+            margin-bottom: 0
+                
+            @media screen and ( min-width: 1500px )
+                font-size: $larger-title-xl
+
+    h2
+        font-size: $subtitle-size
+        color: $darkGreen
+        margin-top: 4px
+        margin-bottom: 4px
+        font-weight: 600
+        opacity: 0.8
+        @media screen and ( min-width: 1500px )
+            font-size: $subtitle-size-xl
+    h3
+        font-size: $context-size
+        font-weight: 600
+        margin-bottom: 0
+        color: $coffee
+        @media screen and ( min-width: 1500px )
+            font-size: $context-size-xl
             
-
-
+    p
+        font-size: $context-size
+        color: #333
+        margin-bottom: 8px
+        @media screen and ( min-width: 1500px )
+            font-size: $subtitle-size-xl
+    .web_comBg1,.web_comBg2
+        position: absolute
+        z-index: 0
+    .web_comBg1
+        top: 95px
+        left: 10px
+        @media screen and ( min-width: 992px )
+            top: 70px
+            left: 10px
         
+    .web_comBg2
+        bottom: 20px
+        right: 20px
+
+.cisRight
+    img
+        margin-top: 4px
+        margin-bottom: 8px
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2)     
+
+.blockArea
+    position: relative
+    top: 70px
+    transition: 0.8s
+    padding-top: 16px
+    margin-bottom: 0
+    top: -16px
+    .type-font
+        font-size: 14px
+        font-weight: normal
+    > *:not(.web_comBg1,.web_comBg2)
+        padding-left: 16px
+        position: relative
+        z-index: 2
+    .title_lgbg
+        background-color: $Green
+        display: inline-block
+        position: relative
+        padding: 6px
+        margin-bottom: 16px 
+        h1
+            font-size: $larger-title
+            color: #fff
+            font-family: $font-family1
+            font-weight: 600
+            border: 1px solid #fff
+            padding: 10px 16px
+            margin-bottom: 0
+                
+            @media screen and ( min-width: 1500px )
+                font-size: $larger-title-xl
+
+    h2
+        font-size: $subtitle-size
+        color: $darkGreen
+        margin-top: 4px
+        margin-bottom: 4px
+        font-weight: 600
+        opacity: 0.8
+        @media screen and ( min-width: 1500px )
+            font-size: $subtitle-size-xl
+    h3
+        font-size: $context-size
+        font-weight: 600
+        margin-bottom: 0
+        color: $coffee
+        @media screen and ( min-width: 1500px )
+            font-size: $context-size-xl
+            
+    p
+        font-size: $context-size
+        color: #333
+        margin-bottom: 8px
+        @media screen and ( min-width: 1500px )
+            font-size: $subtitle-size-xl
+    .web_comBg1,.web_comBg2
+        position: absolute
+        z-index: 0
+    .web_comBg1
+        top: 95px
+        left: 10px
+        
+    .web_comBg2
+        bottom: 20px
+        right: 20px
+
+.goTop
+    @media screen and ( min-width: 992px )
+        height: 91%    
+        top: 30px     
+
+
+
+//newsheader
+.headerBox
+    position: fixed
+    width: 100%
+    height: 70px
+    border-bottom: 1px solid $Green
+    z-index: 10
+    background-color: $lightGreen
+    top: 0px
+    transition: top .8s ease-in-out
+    &.hideup 
+        top: -70px!important
+.menuBtn
+    img
+        width: 24px
+.titleQH
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    font-size: 20px
+    font-weight: 600
+    color: $Green
+    font-family: $font-family1
+//.swiper-slide pt70px
+
+.mt-header
+    padding-top: 90px
+
+//workpage_anime
+.anim_text
+    h1
+        font-size: $title-size
+        font-weight: 600
+        color: $Green
+    h2
+        font-size: $subtitle-size
+        font-weight: 600
+    p
+        font-size: $context-size
+//newsCard
+.cards_text
+    img
+        width: 85%
+    div
+        margin-bottom: 16px
+    div h1
+        font-size: $title-size
+        font-family: $font-family1
+        font-weight: 600
+        margin-bottom: 0
+        color: $Green
+        @media screen and ( min-width: 992px )
+            font-size: $title-size-xl
+    div h2
+        font-size: $context-size
+        font-weight: 600
+        color: $lightCoffee
+        @media screen and ( min-width: 992px )
+            font-size: $context-size-xl
+            
+.poster
+    img:not(.web_comBg1,.web_comBg2)
+        width: 100%
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2)
+
+    div h1
+        font-size: $title-size
+        font-family: $font-family1
+        font-weight: 600
+        margin-bottom: 0
+        color: $Green
+        @media screen and ( min-width: 992px )
+            font-size: $title-size-xl
+    div h2
+        font-size: $context-size
+        font-weight: 600
+        margin-top: 4px
+        color: $lightCoffee
+        @media screen and ( min-width: 992px )
+            font-size: $context-size-xl
+    div h3
+        font-size: $subtitle-size
+        font-weight: 600
+        color: $coffee
+        margin-top: 12px
+        margin-bottom: 4px
+        @media screen and ( min-width: 992px )
+            font-size: $subtitle-size-xl
+    div p
+        font-size: $context-size
+        color: #333
+        @media screen and ( min-width: 992px )
+            font-size: $context-size-xl
+//Revit
+.revit_content
+    div img
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3)
+
+
+.tab_menu
+    display: flex
+    margin-bottom: -1px
+    div
+        flex: 0 0 auto
+        padding: 8px 24px
+        border: 1px solid $Green
+        color: $Green
+        margin: 0
+        margin-right: -1px
+        cursor: pointer
+    .active
+        background-color: $Green
+        color: $lightGreen
+        font-weight: 600
+        position: relative
+        
+        &::before
+            position: absolute
+            bottom: -2px
+            left: 50%
+            transform: translateX(-50%)
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 8px 8px 8px
+            border-color: transparent transparent $lightGreen transparent
+#tabBox
+    div
+        border: 1px solid $Green
+        display: none
+        padding: 16px
+        margin-bottom: 24px
+       
+        h2
+            font-size: $title-size
+            font-weight: 600
+            color: #333
+            position: relative
+            padding-left: 8px
+            margin-bottom: 24px
+            &::before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                width: 4px
+                height: 28px
+                background-color: $Green
+        h3
+            font-size: $subtitle-size
+            color: $coffee
+            font-weight: 600
+    .active
+        display: block
+//video
+.video
+    aspect-ratio: 16 / 9

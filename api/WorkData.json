@@ -2,77 +2,92 @@
     {
         "item": "網頁設計",
         "name": "英寶科技股份有限公司｜企業形象",
-        "pict_url": "pro_yproWeb.png"
+        "pict_url": "pro_yproWeb.png",
+        "webUrl": "workPage_Ypro.html"
         
     },
     {
         "item": "平面設計",
         "name": "英寶科技股份有限公司｜企業識別",
-        "pict_url": "pro_ypro.png"
+        "pict_url": "pro_ypro.png",
+        "webUrl": "workPage_YproCis.html"
     },
     {
         "item": "網頁設計",
         "name": "捷揚科技股份有限公司｜企業形象",
-        "pict_url": "pro_jsuntecWeb.png"
+        "pict_url": "pro_jsuntecWeb.png",
+        "webUrl": "workPage_Jsun.html"
+
     },
     {
         "item": "平面設計",
         "name": "捷揚科技股份有限公司｜企業形象",
-        "pict_url": "pro_jsuntec.png"
+        "pict_url": "pro_jsuntec.png",
+        "webUrl": "workPage_JsunCis.html"
     },
     {
         "item": "UI設計",
-        "name": "工地物品出入管理平台｜IPAD介面",
-        "pict_url": "pro_yproWeb.png"
+        "name": "BottChem｜UI介面",
+        "pict_url": "pro_bottChem.png",
+        "webUrl": "workPage_bottChem.html"
     },
     {
         "item": "UI設計",
-        "name": "IPAD管理櫃｜IPAD介面",
-        "pict_url": "pro_IPAD_Cabinet.png"
+        "name": "IPAD管理櫃｜UI介面",
+        "pict_url": "pro_IPAD_Cabinet.png",
+        "webUrl": "workPage_IPADCabinet.html"
     },
     {
         "item": "網頁設計",
-        "name": "高低壓電力整合設備｜系統介面",
-        "pict_url": "pro_Electricity.png"
-    },
-    {
-        "item": "網頁設計",
-        "name": "FAC8簡訊發送平台｜系統介面",
-        "pict_url": "pro_fac8Mail.png"
-    },
-    {
-        "item": "網頁設計",
-        "name": "FAC8 Power Tology｜系統介面",
-        "pict_url": "pro_fac8.png"
-    },
-    {
-        "item": "影片設計",
-        "name": "電子賀卡｜AE",
-        "pict_url": "pro_yproWeb.png"
-    },
-    {
-        "item": "3D設計",
-        "name": "最接近的差異｜畢業專題／3D",
-        "pict_url": "pro_yproWeb.png"
-    },
-    {
-        "item": "3D設計",
-        "name": "一般3Ｄ模型｜人物、造景",
-        "pict_url": "pro_yproWeb.png"
-    },
-    {
-        "item": "3D設計",
-        "name": "一般3Ｄ模型｜工業類",
-        "pict_url": "pro_yproWeb.png"
+        "name": "系統軟體介面設計｜系統介面",
+        "pict_url": "pro_system.png",
+        "webUrl": "workPage_system.html"
     },
     {
         "item": "平面設計",
-        "name": "賀卡設計｜2D設計",
-        "pict_url": "pro_yproWeb.png"
+        "name": "英寶企業徵才文宣｜徵才文宣",
+        "pict_url": "pro_recruit.png",
+        "webUrl": "workPage_YproRecruit.html"
+
+    },
+    {
+        "item": "3D設計",
+        "name": "Revit族群3D物件｜人物、造景",
+        "pict_url": "pro_revit.png",
+        "webUrl": "workPage_revit.html"
+    },
+    {
+        "item": "3D設計",
+        "name": "SketchUp3D物件｜產品",
+        "pict_url": "pro_sketchup.png",
+        "webUrl": "workPage_sketchUp.html"
+    },
+    {
+        "item": "3D設計",
+        "name": "最接近的差異｜畢業專題",
+        "pict_url": "pro_anim.png",
+        "webUrl": "workPage_anime.html"
+
     },
     {
         "item": "平面設計",
-        "name": "貼圖/2D設計",
-        "pict_url": "pro_yproWeb.png"
+        "name": "頂集-德國咖啡因喚彩黑髮乳｜廣告文宣",
+        "pict_url": "pro_CLTop.png",
+        "webUrl": "workPage_CLTop.html"
+
+    },
+    {
+        "item": "平面設計",
+        "name": "德國專業有機植物性紋鏽色料｜廣告文宣",
+        "pict_url": "pro_MP.png",
+        "webUrl": "workPage_MP.html"
+
+    },
+    {
+        "item": "平面設計",
+        "name": "新年賀卡｜2018-2022",
+        "pict_url": "pro_newCard.png",
+        "webUrl": "workPage_cards.html"
+
     }
 ]
