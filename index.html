@@ -27,7 +27,7 @@
         </div>
         <div class="main_block right">123</div>
         <div class="menu">
-            <div id="menu"> <img src="img/menu-app.svg" alt=""></div>
+            <div id="menu" onClick="clickfn();"> <img src="img/menu-app.svg" alt=""></div>
             
         </div>
         <div class="contactBtn">
@@ -50,7 +50,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 <script src="js/index.js"></script>
 <script>
-    let indexImg =document.getElementsByClassName("main_block")[1].children
+    
+    let indexImg =document.getElementsByClassName("main_block")[1].children;
     console.log(indexImg.length)
     let i=2;
     let a= setInterval(()=>{
@@ -66,7 +67,7 @@
            
         }
        
-    },4000)
+    },4000);
 </script>
 </body>
 
