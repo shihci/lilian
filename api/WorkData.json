@@ -62,13 +62,7 @@
         "pict_url": "pro_sketchup.png",
         "webUrl": "workPage_sketchUp.html"
     },
-    {
-        "item": "3D設計",
-        "name": "最接近的差異｜畢業專題",
-        "pict_url": "pro_anim.png",
-        "webUrl": "workPage_anime.html"
-
-    },
+    
     {
         "item": "平面設計",
         "name": "頂集-德國咖啡因喚彩黑髮乳｜廣告文宣",
@@ -84,10 +78,39 @@
 
     },
     {
+        "item": "影片設計",
+        "name": "IBC美睫職類與半永久文繡職類｜宣導影片",
+        "pict_url": "pro_IBC.png",
+        "webUrl": "workPage_VideoIBC.html"
+
+    },
+    {
+        "item": "影片設計",
+        "name": "IBC美捷職類越南推廣影片｜推廣影片",
+        "pict_url": "pro_mej.png",
+        "webUrl": "workPage_VideoMej.html"
+
+    },
+    {
         "item": "平面設計",
         "name": "新年賀卡｜2018-2022",
         "pict_url": "pro_newCard.png",
         "webUrl": "workPage_cards.html"
+
+    },
+    {
+        "item": "3D設計",
+        "name": "最接近的差異｜畢業專題",
+        "pict_url": "pro_anim.png",
+        "webUrl": "workPage_anime.html"
+
+    },
+    
+    {
+        "item": "影片設計",
+        "name": "豬年電子賀卡｜2019",
+        "pict_url": "pro_eCards2019.png",
+        "webUrl": "workPage_VideoECard2019.html"
 
     }
 ]
