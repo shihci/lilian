@@ -55,7 +55,7 @@ p {
 }
 
 .menu:hover, .closed:hover {
-  background-color: red;
+  background-color: blue;
 }
 
 .menu div, .closed div {
