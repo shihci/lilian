@@ -47,7 +47,7 @@ window.onload=function(){
     
      const menuBtn = document.getElementById("menu");
      const closed =document.getElementById("closed");
-    // const menu=document.getElementById("menu_area");
+    // const menu=document.getElementById("menu_area")
 
     if(menuBtn){
             menuBtn.addEventListener("click",()=>{
