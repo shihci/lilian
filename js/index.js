@@ -45,35 +45,35 @@ window.onload=function(){
 //選單下拉
 
     
-    // const menuBtn = document.getElementById("menu");
-    // const closed =document.getElementById("closed");
+     const menuBtn = document.getElementById("menu");
+     const closed =document.getElementById("closed");
     // const menu=document.getElementById("menu_area");
 
-    // if(menuBtn){
-    //         menuBtn.addEventListener("click",()=>{
-    //         menu.style.bottom="0";
-    //         menu.style.height="100%";
-    //     });
-    // }
+    if(menuBtn){
+            menuBtn.addEventListener("click",()=>{
+            document.getElementById("menu_area").style.bottom="0";
+            document.getElementById("menu_area").style.height="100%";
+        });
+    }
     
-    // if(closed){
-    //     closed.addEventListener("click",()=>{
-    //         menu.style.bottom="100%";  
-    //         });
-    // }
-    //
+    if(closed){
+        closed.addEventListener("click",()=>{
+            document.getElementById("menu_area").style.bottom="100%";  
+            });
+    }
+    
        
 }
     
-function clickfn(){
-    document.getElementById("menu_area").style.bottom="0";
-    document.getElementById("menu_area").style.height="100%";
-}
+    // function clickfn(){
+    //     document.getElementById("menu_area").style.bottom="0";
+    //     document.getElementById("menu_area").style.height="100%";
+    // }
 
     
-    function closefn(){
-        document.getElementById("menu_area").style.bottom="100%";
-    }
+    // function closefn(){
+    //     document.getElementById("menu_area").style.bottom="100%";
+    // }
 
     let navDoM =document.getElementById("nav");
     function getNav(){
