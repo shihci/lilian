@@ -2,29 +2,76 @@
     axios.get("./api/WorkData.json")
     .then(function(res){
         let allWs=res.data;
-        //進入篩選
+        //篩選方法
         function Work(value){
-                    let arr=allWs.filter(function(obj){
-                        if (value === 'allWs'){
-                            return obj;
-                        }
-                        return obj.item ===value;
+            let arr=allWs.filter(function(obj){
+                if (value === 'allWs'){
+                    return obj;
+                }
+                return obj.item ===value;
+            })
+            WorkItems(arr);
+        }
+        //點擊後進入篩選
+        for(var i = 0; i < els.length; i++)
+        {
+        els[i].addEventListener("click",(e)=>{
+            Work(e.target.getAttribute("name"));
+            // for( let a = 0 ; a < els.length ; a++ ){//先清除所有active樣式
+            //     els[a].classList.remove("active");
+            // }
+            btnNws();
+            e.target.classList.add("active");
+            // console.log(e.target.getAttribute("name"))
                     })
-                    WorkItems(arr);
-                }
+        }
+        //預設全部篩選
+        WorkItems(allWs);
+        //清除按鈕樣式
+        function btnNws(){
+            for( let a = 0 ; a < els.length ; a++ ){//先清除所有active樣式
+                els[a].classList.remove("active");
+            }
+                    
+        }
+
+        //抓取網頁的url比對
+        // let testWork=document.getElementsByClassName("work_nav")[0].children
+        let url2 =location.href;
+        let temp =url2.split("?");
         
-                for(var i = 0; i < els.length; i++)
-                {
-                els[i].addEventListener("click",(e)=>{
-                    Work(e.target.getAttribute("name"));
-                    for( let a = 0 ; a < els.length ; a++ ){//先清除所有active樣式
-                        els[a].classList.remove("active");
-                    }
-                    e.target.classList.add("active");
-                    console.log(e.target.getAttribute("name"))
-                            })
+        for(let a=0;a<els.length;a++){
+            if(els[a].getAttribute("data-cata")===temp[1]){
+                console.log(temp[1]);
+                btnNws();
+                els[a].classList.add("active")
+                if(temp[1]==="web"){
+                    Work("網頁設計");
+                    break;
+                }else if(temp[1]==="ui"){
+                    Work("UI設計");
+                    break;
+                }else if(temp[1]==="2D"){
+                    Work("平面設計");
+                    break;
+                }else if(temp[1]==="3D"){
+                    Work("3D設計");
+                    break;
+                }else if(temp[1]==="video"){
+                    Work("影片設計");
+                    break;
                 }
-                WorkItems(allWs);
+                
+                break;
+            }
+            else{
+                console.log(temp[1])
+            }
+        }
+
+
+
+
  
     })
     .catch(function(error){
@@ -75,6 +122,7 @@
     let Ws_nav=document.getElementsByClassName("work_nav")[0];
     // let Ws_navItem=Array.from(Ws_nav.children);
     var els = document.getElementsByClassName("testWork");
+    
 
 
     function WorkItems(resArr){
@@ -131,3 +179,5 @@
         });
         resourceContent.innerHTML=resource;
     }
+
+    

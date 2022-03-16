@@ -108,6 +108,10 @@ p {
           flex: 1;
 }
 
+.contentBody {
+  min-height: 80vh;
+}
+
 .contact_icon {
   width: 24px;
 }
@@ -416,6 +420,18 @@ p {
   .index_pos {
     width: 180px;
   }
+}
+
+.footer {
+  margin-top: 24px;
+  border-top: 1px solid #007A79;
+  padding: 12px;
+}
+
+.footer div {
+  font-size: 14px;
+  font-family: "Noto Serif TC", "微軟正黑體", Arial, serif;
+  color: #007A79;
 }
 
 .title_text {
@@ -2167,7 +2183,7 @@ p {
     padding: 16px;
     position: fixed;
     width: 370px;
-    height: 84%;
+    height: 85%;
     top: 86px;
   }
 }
@@ -2408,8 +2424,9 @@ p {
 
 @media screen and (min-width: 992px) {
   .goTop {
-    height: 91%;
+    height: 86%;
     top: 30px;
+    display: fl;
   }
 }
 

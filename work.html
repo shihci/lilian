@@ -15,7 +15,7 @@
     
     <div id="headerBox" class="headerBox">
 		<div class="menu">
-			<div id="menu" class="menuBtn" onClick="clickfn();"> <img src="img/menu-app.svg" alt=""></div>
+			<div id="menu" class="menuBtn"> <img src="img/menu-app.svg" alt=""></div>
 		</div>
 		
 		<div class="titleQH ">CHEN QIAN HUI</div>
@@ -26,7 +26,7 @@
 
     <div class="main_page mt-header">
        
-        <div class="container">
+        <div class="container contentBody">
             <div class="row py-4">
                 <div class="col-12 col-md-3">
                     <div class="title_cn">作品展示</div>
@@ -35,11 +35,11 @@
                 <div class="col-12 col-md-9">
                     <div class="work_nav">
                         <div class="testWork active" name="allWs">全部</div> 
-                        <div class="testWork" name="網頁設計">網頁設計</div>
-                        <div class="testWork" name="UI設計">UI設計</div>
-                        <div class="testWork" name="平面設計">平面設計</div>
-                        <div class="testWork" name="3D設計">3D設計</div>
-                        <div class="testWork" name="影片設計">影片設計</div>
+                        <div class="testWork" name="網頁設計" data-cata="web" >網頁設計</div>
+                        <div class="testWork" name="UI設計" data-cata="ui">UI設計</div>
+                        <div class="testWork" name="平面設計" data-cata="2D">平面設計</div>
+                        <div class="testWork" name="3D設計" data-cata="3D">3D設計</div>
+                        <div class="testWork" name="影片設計" data-cata="video">影片設計</div>
                     </div>
                     
                 </div>
@@ -63,38 +63,10 @@
                         <img src="img/pro_test/pro_sm_2.png" alt="">
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 col-2_10">
-                    <div class="work_item">
-                        <img src="img/pro_test/pro_sm_3.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 col-2_10">
-                    <div class="work_item">
-                        <img src="img/pro_test/pro_sm_-1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 col-2_10">
-                    <div class="work_item">
-                        <img src="img/pro_test/pro_sm_5.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 col-2_10">
-                    <div class="work_item">
-                        <img src="img/pro_test/pro_sm_6.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 col-2_10">
-                    <div class="work_item">
-                        <img src="img/pro_test/pro_sm_7.png" alt="">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 col-2_10">
-                    <div class="work_item">
-                        <img src="img/pro_test/pro_sm_8.png" alt="">
-                    </div>
-                </div> -->
+                 -->
             </div>
         </div>
+        <div id="footer"></div>
     </div>
     
     
@@ -116,4 +88,19 @@ for(var i = 0; i < els.length; i++)
 
 <script src="js/axiosList.js"></script>
 <script src="js/index.js"></script>
+<!-- <script>
+    let testWork=document.getElementsByClassName("work_nav")[0].children
+    let url2 =location.href;
+    let temp =url2.split("?");
+    console.log(testWork)
+    for(let a=0;a<testWork.length;a++){
+       if(testWork[a].getAttribute("data-cata")===temp[1]){
+        console.log(temp[1]);
+        break;
+       }
+       else{
+           console.log(temp)
+       }
+    }
+</script> -->
 </html>
