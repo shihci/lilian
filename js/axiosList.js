@@ -27,6 +27,7 @@
         }
         //預設全部篩選
         WorkItems(allWs);
+
         //清除按鈕樣式
         function btnNws(){
             for( let a = 0 ; a < els.length ; a++ ){//先清除所有active樣式
@@ -36,37 +37,34 @@
         }
 
         //抓取網頁的url比對
-        // let testWork=document.getElementsByClassName("work_nav")[0].children
-        let url2 =location.href;
-        let temp =url2.split("?");
+        let url1 =location.href;
+        let temp1 =url1.split("?");
         
         for(let a=0;a<els.length;a++){
-            if(els[a].getAttribute("data-cata")===temp[1]){
-                console.log(temp[1]);
+            if(els[a].getAttribute("data-cata")===temp1[1]){
+                // console.log(temp1[1]);
                 btnNws();
                 els[a].classList.add("active")
-                if(temp[1]==="web"){
+                if(temp1[1]==="web"){
                     Work("網頁設計");
                     break;
-                }else if(temp[1]==="ui"){
+                }else if(temp1[1]==="ui"){
                     Work("UI設計");
                     break;
-                }else if(temp[1]==="2D"){
+                }else if(temp1[1]==="2D"){
                     Work("平面設計");
                     break;
-                }else if(temp[1]==="3D"){
+                }else if(temp1[1]==="3D"){
                     Work("3D設計");
                     break;
-                }else if(temp[1]==="video"){
+                }else if(temp1[1]==="video"){
                     Work("影片設計");
                     break;
                 }
                 
                 break;
             }
-            else{
-                console.log(temp[1])
-            }
+           
         }
 
 
@@ -81,7 +79,7 @@
     axios.get("./api/data.json")
     .then(function(res){
         let alls=res.data;
-        //進入篩選
+        //篩選方法
         function resouse(value){
             let arr=alls.filter(function(obj){
                 if (value === 'allRs'){
@@ -91,16 +89,17 @@
             })
             ResourceItems(arr);
         }
-        //監聽按鈕的name
+        //點擊後進入篩選
        
         for(var j = 0; j < els2.length; j++)
         {
         
         els2[j].addEventListener("click",(e)=>{
             resouse(e.target.getAttribute("name"));
-            for( let b = 0 ; b < els2.length ; b++ ){//先清除所有active樣式
-                els2[b].classList.remove("active");
-            }
+            // for( let b = 0 ; b < els2.length ; b++ ){//先清除所有active樣式
+            //     els2[b].classList.remove("active");
+            // }
+            btnNws2();
             e.target.classList.add("active");//加入被點擊後的樣式
             console.log(e.target.getAttribute("name"));
                     
@@ -110,8 +109,48 @@
         }
 
     
-
+        //預設全部篩選
          ResourceItems(alls);
+
+         //清除按鈕樣式
+        function btnNws2(){
+            for( let b = 0 ; b < els2.length ; b++ ){//先清除所有active樣式
+                els2[b].classList.remove("active");
+            }          
+        }
+
+         //抓取網頁的url比對,要調整
+         let url2 =location.href;
+         let temp2 =url2.split("?");
+         console.log("test")
+         for(let a=0;a<els2.length;a++){
+             if(els2[a].getAttribute("data-cata")===temp2[1]){
+                  console.log(temp2[1]);
+                 btnNws2();
+                 els2[a].classList.add("active")
+                 if(temp2[1]==="picture"){
+                    resouse("素材圖庫");
+                     break;
+                 }else if(temp2[1]==="color"){
+                    resouse("配色推薦");
+                     break;
+                 }else if(temp2[1]==="font"){
+                    resouse("字體設計");
+                     break;
+                 }else if(temp2[1]==="icon"){
+                    resouse("icon設計");
+                     break;
+                 }
+                 
+                 break;
+             }
+             else{
+                console.log(temp2);
+             }
+            
+         }
+
+
  
     })
     .catch(function(error){

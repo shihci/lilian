@@ -15,17 +15,21 @@
     <div class="main_home">
         <div class="main_block left">
             <div class="index_pos">
-                <p class="index_p1">收入2018年——至今</p>
+                <p class="index_p1">收錄2018年——至今</p>
                 <h2 class="index_title">Chen Qian Hui</h2>
-                <img class="index_pad_img" src="img/a1.jpg" alt="">
+                <div class="frameImg">
+                     <img class="index_pad_img" src="img/qhchen/qhchen1.jpg" alt="">
+                     <img class="index_pad_img" src="img/qhchen/qhchen2.jpg" alt="">
+                     <img class="index_pad_img" src="img/qhchen/qhchen3.jpg" alt="">
+                </div>  
            </div>
         </div>
         <div class="main_block center">
             <img class="index_me" src="img/qhchen/qhchen1.jpg" alt="">
-            <img class="index_me" src="img/qhchen/qhchen2.JPG" alt="">
+            <img class="index_me" src="img/qhchen/qhchen2.jpg" alt="">
             <img class="index_me" src="img/qhchen/qhchen3.jpg" alt="">
         </div>
-        <div class="main_block right">123</div>
+        <div class="main_block right"></div>
         <div class="menu">
             <div id="menu"> <img src="img/menu-app.svg" alt=""></div>
             <!-- onClick="clickfn();" -->
@@ -53,17 +57,24 @@
 <script>
     
     let indexImg =document.getElementsByClassName("main_block")[1].children;
+   let frameImg = document.getElementsByClassName("frameImg")[0].children;
+   console.log(frameImg)
+    
     console.log(indexImg.length)
     let i=2;
     let a= setInterval(()=>{
-       
+        frameImg[i].style.opacity=0;
         indexImg[i].style.opacity=0;
         i--;
         console.log(i)
+    
         if(i==-1){
             i=2;
             for(let j=0;j<indexImg.length;j++){
                 indexImg[j].style.opacity=1;
+            }
+            for(let j=0;j<frameImg.length;j++){
+                frameImg[j].style.opacity=1;
             }
            
         }

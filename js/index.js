@@ -87,7 +87,10 @@ window.onload=function(){
 
     axios.all([getNav(),getFooter()]).then(axios.spread(function(Nav1,Footer1){
         navDoM.innerHTML = Nav1.data;
-        footerDoM.innerHTML = Footer1.data
+        if(footerDoM){
+            footerDoM.innerHTML = Footer1.data
+        }
+        
     }))
     
  
