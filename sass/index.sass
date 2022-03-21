@@ -66,6 +66,8 @@ p
             display: inline-block
             font-size: 24px
             flex: 1
+            width: 100%
+            height: 100%
 .contactBtn
     position: absolute
     right: 12px
@@ -74,13 +76,16 @@ p
         display: flex
         justify-content: center
         align-items: center
-        width: 28px
+        width: 38px
+        height: 38px
         padding: 4px
         margin-top: 8px
         border-radius: 99em
         background-color: #fff
         opacity: 0.8
         cursor: pointer
+        overflow: hidden
+        
         & img
             display: inline-block
             font-size: 24px
@@ -89,7 +94,9 @@ p
 .contentBody
     min-height: 80vh
 .contact_icon
-    width: 24px
+    width: 36px
+    
+        
     
 .main_home
     display: flex
@@ -127,9 +134,12 @@ p
     vertical-align: top
     font-family: $font-family1
     font-weight: 600
+.index_p1
+    color: $Green
 
 .index_title
     font-size: 36px
+    color: $darkGreen
 .center_img
     position: relative
     height: 100%
@@ -202,6 +212,7 @@ p
         position: absolute
         top: 0
         left: 0
+        transition: opacity 1s
    
 .menu_area
     position: fixed
@@ -209,9 +220,11 @@ p
     bottom: 100% //100
     left: 0
     right: 0
-    background-color: rgba(241,244,242,0.9)
+    background-color: rgba(241,244,242,0.95)
     transition: 0.8s ease
     z-index: 20
+    // bottom: 0%
+    // height: 100%
 .menu_ul1
     position: relative
     top: 40%
@@ -236,17 +249,58 @@ p
         & div
             font-size: 14px
             line-height: 12px
-    
+.menu_title
+    position: relative
+    top: 38px
+    text-align: center
+    font-family: $font-family1
+    color: $Green
+    font-size: 16px
+    font-weight: 600
+    &::before
+        position: absolute
+        content: ""
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 45%
+        height: 1px
+        background-color: $Green
+    &:after
+        position: absolute
+        content: ""
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 45%
+        height: 1px
+        background-color: $Green
+    .menuBox
+        position: relative
+        display: inline-block
+        width: 100px
+        height: 100px
+        border-radius: 50px
+        border: 1px solid $Green
+        background-color: $Green
+        div
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            color: #fff
+
 .menu_textArea
     position: relative
-    margin-top: 70px
-    
+    margin-top: 0px
     text-align: center
     width: 60%
     padding-right: 15px
     padding-left: 15px
     margin-right: auto
     margin-left: auto
+    @media screen and ( max-width: 767px )
+        margin-top: 70px
     @media screen and ( min-width:  768px)
         top: 40%
         transform: translateY(-50%)
@@ -257,16 +311,19 @@ p
         display: inline-block
 .flex_li1
     flex: 1
+    padding: 16px
     margin-bottom: 0.5rem
     cursor: pointer
     @media screen and ( min-width: 768px )
          margin-bottom: 0
     & a
         font-family: $font-family1
-        font-size: 15px
+        font-size: 20px
         color: $darkGreen
         font-weight: 600
         text-decoration: none
+        transition: 0.5s
+    
         @media screen and ( min-width: 768px )
             font-size: 16px
         @media screen and ( min-width: 992px )
@@ -274,15 +331,33 @@ p
         & div
             font-size: 14px
             line-height: 12px
+    &>a:hover
+        text-shadow: 0px 0px 20px rgba(#9EC545, 0.8)
+        font-weight: 800
     & div ul li a
         font-size: 14px
         font-weight: 400
         color: $coffee
-        padding: 2px 12px
         border-radius: 20px
+        padding: 2px 4px
+        @media screen and ( min-width: 992px )
+            padding: 2px 12px
+            
         &:hover
             background-color: lighten($darkYellow, 10)
-            
+@media screen and ( min-width: 992px )   
+    .list_show
+        opacity: 0
+        position: relative
+        top: 20px
+        transition: 1s
+    .flex_li1:hover .list_show
+        opacity: 1
+        top: 0
+    .flex_li1:hover .list_control
+        text-shadow: 0px 0px 20px rgba(#9EC545, 1)
+        font-weight: 800
+
 @media screen and ( min-width: 768px )
     .index_pad_img
         width: 500px
@@ -438,8 +513,7 @@ p
 .work_nav div,.resource_nav div ,.work_nav div
     display: inline-block
     padding: 2px 12px
-    margin-left: 2px
-    margin-right: 2px
+    margin: 8px
     color: $Green
     cursor: pointer
 .work_nav .active,.resource_nav .active ,.work_nav .active
